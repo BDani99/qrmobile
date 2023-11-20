@@ -14,6 +14,11 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+    "permissions": {
+      "camera": {
+        "description": "Az alkalmazás kamera használatához engedélyre van szükség."
+      }
+    },
     "ios": {
       "supportsTablet": true
     },

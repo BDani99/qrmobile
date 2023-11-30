@@ -1,0 +1,1282 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Users\bdani\AppData\Roaming\npm\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.2.3
+2 info using node@v18.18.0
+3 timing npm:load:whichnode Completed in 3ms
+4 timing config:load:defaults Completed in 4ms
+5 timing config:load:file:C:\Users\bdani\AppData\Roaming\npm\node_modules\npm\npmrc Completed in 5ms
+6 timing config:load:builtin Completed in 5ms
+7 timing config:load:cli Completed in 2ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:file:C:\Users\bdani\Desktop\qrmobile\qrmobile\.npmrc Completed in 1ms
+10 timing config:load:project Completed in 2ms
+11 timing config:load:file:C:\Users\bdani\.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:C:\Users\bdani\AppData\Roaming\npm\etc\npmrc Completed in 1ms
+14 timing config:load:global Completed in 1ms
+15 timing config:load:setEnvs Completed in 1ms
+16 timing config:load Completed in 16ms
+17 timing npm:load:configload Completed in 16ms
+18 timing config:load:flatten Completed in 3ms
+19 timing npm:load:mkdirpcache Completed in 1ms
+20 timing npm:load:mkdirplogs Completed in 1ms
+21 verbose title npm install @react-navigation/native @react-navigation/bottom-tabs @react-navigation/native-stack @react-navigation/drawer @react-navigation/material-top-tabs react-native-tab-view
+22 verbose argv "install" "@react-navigation/native" "@react-navigation/bottom-tabs" "@react-navigation/native-stack" "@react-navigation/drawer" "@react-navigation/material-top-tabs" "react-native-tab-view"
+23 timing npm:load:setTitle Completed in 2ms
+24 timing npm:load:display Completed in 1ms
+25 verbose logfile logs-max:10 dir:C:\Users\bdani\Desktop\qrmobile\qrmobile\UsersbdaniAppDataLocalnpm-cache\_logs\2023-11-17T17_53_59_931Z-
+26 verbose logfile C:\Users\bdani\Desktop\qrmobile\qrmobile\UsersbdaniAppDataLocalnpm-cache\_logs\2023-11-17T17_53_59_931Z-debug-0.log
+27 timing npm:load:logFile Completed in 11ms
+28 timing npm:load:timers Completed in 0ms
+29 timing npm:load:configScope Completed in 0ms
+30 timing npm:load Completed in 68ms
+31 timing arborist:ctor Completed in 2ms
+32 silly logfile done cleaning log files
+33 timing idealTree:init Completed in 932ms
+34 timing idealTree:userRequests Completed in 2ms
+35 silly idealTree buildDeps
+36 silly fetch manifest @react-navigation/native@*
+37 timing arborist:ctor Completed in 0ms
+38 http fetch GET 200 https://registry.npmjs.org/@react-navigation%2fnative 745ms (cache miss)
+39 silly fetch manifest react@18.2.0
+40 http fetch GET 200 https://registry.npmjs.org/npm 1859ms (cache miss)
+41 http fetch GET 200 https://registry.npmjs.org/react 387ms (cache miss)
+42 silly fetch manifest react-native@0.72.6
+43 http fetch GET 200 https://registry.npmjs.org/react-native 651ms (cache miss)
+44 silly fetch manifest @react-navigation/bottom-tabs@*
+45 http fetch GET 200 https://registry.npmjs.org/@react-navigation%2fbottom-tabs 184ms (cache miss)
+46 silly fetch manifest react-native-safe-area-context@>= 3.0.0
+47 http fetch GET 200 https://registry.npmjs.org/react-native-safe-area-context 86ms (cache miss)
+48 silly fetch manifest react-native-screens@>= 3.0.0
+49 http fetch GET 200 https://registry.npmjs.org/react-native-screens 108ms (cache miss)
+50 silly fetch manifest @react-navigation/native-stack@*
+51 http fetch GET 200 https://registry.npmjs.org/@react-navigation%2fnative-stack 138ms (cache miss)
+52 silly fetch manifest @react-navigation/drawer@*
+53 http fetch GET 200 https://registry.npmjs.org/@react-navigation%2fdrawer 193ms (cache miss)
+54 silly fetch manifest react-native-gesture-handler@>= 1.0.0
+55 http fetch GET 200 https://registry.npmjs.org/react-native-gesture-handler 119ms (cache miss)
+56 silly fetch manifest react-native-reanimated@>= 1.0.0
+57 http fetch GET 200 https://registry.npmjs.org/react-native-reanimated 847ms (cache miss)
+58 silly fetch manifest @babel/core@^7.20.0
+59 http fetch GET 200 https://registry.npmjs.org/@babel%2fcore 99ms (cache miss)
+60 silly fetch manifest @babel/plugin-proposal-nullish-coalescing-operator@^7.0.0-0
+61 http fetch GET 200 https://registry.npmjs.org/@babel%2fplugin-proposal-nullish-coalescing-operator 105ms (cache miss)
+62 silly fetch manifest @babel/plugin-proposal-optional-chaining@^7.0.0-0
+63 http fetch GET 200 https://registry.npmjs.org/@babel%2fplugin-proposal-optional-chaining 86ms (cache miss)
+64 silly fetch manifest @babel/plugin-transform-arrow-functions@^7.0.0-0
+65 http fetch GET 200 https://registry.npmjs.org/@babel%2fplugin-transform-arrow-functions 91ms (cache miss)
+66 silly fetch manifest @babel/plugin-transform-shorthand-properties@^7.0.0-0
+67 http fetch GET 200 https://registry.npmjs.org/@babel%2fplugin-transform-shorthand-properties 75ms (cache miss)
+68 silly fetch manifest @babel/plugin-transform-template-literals@^7.0.0-0
+69 http fetch GET 200 https://registry.npmjs.org/@babel%2fplugin-transform-template-literals 99ms (cache miss)
+70 silly fetch manifest @react-navigation/material-top-tabs@*
+71 http fetch GET 200 https://registry.npmjs.org/@react-navigation%2fmaterial-top-tabs 1788ms (cache miss)
+72 silly fetch manifest react-native-pager-view@>= 4.0.0
+73 http fetch GET 200 https://registry.npmjs.org/react-native-pager-view 800ms (cache miss)
+74 silly fetch manifest react-native-tab-view@*
+75 http fetch GET 200 https://registry.npmjs.org/react-native-tab-view 850ms (cache miss)
+76 silly placeDep ROOT @react-navigation/bottom-tabs@6.5.11 OK for: qrmobile@1.0.0 want: *
+77 silly placeDep ROOT @react-navigation/native@6.1.9 OK for: @react-navigation/bottom-tabs@6.5.11 want: ^6.0.0
+78 silly placeDep ROOT react-native-safe-area-context@4.7.4 OK for: @react-navigation/bottom-tabs@6.5.11 want: >= 3.0.0
+79 silly placeDep ROOT react-native-screens@3.27.0 OK for: @react-navigation/bottom-tabs@6.5.11 want: >= 3.0.0
+80 silly fetch manifest @react-navigation/elements@^1.3.21
+81 silly fetch manifest color@^4.2.3
+82 silly fetch manifest warn-once@^0.1.0
+83 silly fetch manifest react-freeze@^1.0.0
+84 silly fetch manifest @react-navigation/core@^6.4.10
+85 silly fetch manifest escape-string-regexp@^4.0.0
+86 silly fetch manifest fast-deep-equal@^3.1.3
+87 silly placeDep ROOT @react-navigation/drawer@6.6.6 OK for: qrmobile@1.0.0 want: *
+88 silly placeDep ROOT react-native-gesture-handler@2.13.4 OK for: @react-navigation/drawer@6.6.6 want: >= 1.0.0
+89 silly placeDep ROOT react-native-reanimated@3.5.4 OK for: @react-navigation/drawer@6.6.6 want: >= 1.0.0
+90 silly fetch manifest @babel/plugin-transform-object-assign@^7.16.7
+91 silly fetch manifest @egjs/hammerjs@^2.0.17
+92 silly fetch manifest hoist-non-react-statics@^3.3.0
+93 silly placeDep ROOT @react-navigation/material-top-tabs@6.6.5 OK for: qrmobile@1.0.0 want: *
+94 silly placeDep ROOT react-native-pager-view@6.2.2 OK for: @react-navigation/material-top-tabs@6.6.5 want: >= 4.0.0
+95 silly placeDep ROOT react-native-tab-view@3.5.2 OK for: @react-navigation/material-top-tabs@6.6.5 want: >= 3.0.0
+96 silly fetch manifest use-latest-callback@^0.1.5
+97 silly placeDep ROOT @react-navigation/native@6.1.9 REPLACE for: qrmobile@1.0.0 want: *
+98 silly placeDep ROOT @react-navigation/native-stack@6.9.17 OK for: qrmobile@1.0.0 want: *
+99 silly placeDep ROOT react-native-tab-view@3.5.2 REPLACE for: qrmobile@1.0.0 want: *
+100 http fetch GET 200 https://registry.npmjs.org/color 142ms (cache miss)
+101 http fetch GET 200 https://registry.npmjs.org/warn-once 279ms (cache miss)
+102 http fetch GET 200 https://registry.npmjs.org/fast-deep-equal 286ms (cache miss)
+103 http fetch GET 200 https://registry.npmjs.org/escape-string-regexp 385ms (cache miss)
+104 http fetch GET 200 https://registry.npmjs.org/react-freeze 389ms (cache miss)
+105 http fetch GET 200 https://registry.npmjs.org/use-latest-callback 348ms (cache miss)
+106 http fetch GET 200 https://registry.npmjs.org/hoist-non-react-statics 362ms (cache miss)
+107 http fetch GET 200 https://registry.npmjs.org/@babel%2fplugin-transform-object-assign 368ms (cache miss)
+108 http fetch GET 200 https://registry.npmjs.org/@egjs%2fhammerjs 410ms (cache miss)
+109 http fetch GET 200 https://registry.npmjs.org/@react-navigation%2fcore 655ms (cache miss)
+110 http fetch GET 200 https://registry.npmjs.org/@react-navigation%2felements 1553ms (cache miss)
+111 timing idealTree:#root Completed in 9161ms
+112 silly fetch manifest @react-navigation/native@^6.0.0
+113 silly fetch manifest react@*
+114 silly fetch manifest react-native@*
+115 silly placeDep ROOT @react-navigation/elements@1.3.21 OK for: @react-navigation/bottom-tabs@6.5.11 want: ^1.3.21
+116 silly placeDep ROOT color@4.2.3 OK for: @react-navigation/bottom-tabs@6.5.11 want: ^4.2.3
+117 silly fetch manifest color-convert@^2.0.1
+118 silly fetch manifest color-string@^1.9.0
+119 silly placeDep ROOT warn-once@0.1.1 OK for: @react-navigation/bottom-tabs@6.5.11 want: ^0.1.0
+120 http fetch GET 200 https://registry.npmjs.org/color-convert 102ms (cache miss)
+121 http fetch GET 200 https://registry.npmjs.org/color-string 108ms (cache miss)
+122 timing idealTree:node_modules/@react-navigation/bottom-tabs Completed in 137ms
+123 timing idealTree:node_modules/@react-navigation/drawer Completed in 0ms
+124 timing idealTree:node_modules/@react-navigation/elements Completed in 0ms
+125 timing idealTree:node_modules/@react-navigation/material-top-tabs Completed in 0ms
+126 silly placeDep ROOT @react-navigation/core@6.4.10 OK for: @react-navigation/native@6.1.9 want: ^6.4.10
+127 silly fetch manifest @react-navigation/routers@^6.1.9
+128 silly fetch manifest query-string@^7.1.3
+129 silly fetch manifest react-is@^16.13.0
+130 silly fetch manifest use-latest-callback@^0.1.7
+131 silly placeDep node_modules/@react-navigation/native escape-string-regexp@4.0.0 OK for: @react-navigation/native@6.1.9 want: ^4.0.0
+132 silly placeDep ROOT fast-deep-equal@3.1.3 OK for: @react-navigation/native@6.1.9 want: ^3.1.3
+133 http fetch GET 200 https://registry.npmjs.org/query-string 90ms (cache miss)
+134 http fetch GET 200 https://registry.npmjs.org/@react-navigation%2frouters 222ms (cache miss)
+135 http fetch GET 200 https://registry.npmjs.org/react-is 730ms (cache miss)
+136 timing idealTree:node_modules/@react-navigation/native Completed in 758ms
+137 silly placeDep ROOT @react-navigation/routers@6.1.9 OK for: @react-navigation/core@6.4.10 want: ^6.1.9
+138 silly placeDep node_modules/@react-navigation/core escape-string-regexp@4.0.0 OK for: @react-navigation/core@6.4.10 want: ^4.0.0
+139 silly placeDep ROOT query-string@7.1.3 OK for: @react-navigation/core@6.4.10 want: ^7.1.3
+140 silly fetch manifest decode-uri-component@^0.2.2
+141 silly fetch manifest filter-obj@^1.1.0
+142 silly fetch manifest split-on-first@^1.0.0
+143 silly fetch manifest strict-uri-encode@^2.0.0
+144 silly placeDep node_modules/@react-navigation/core react-is@16.13.1 OK for: @react-navigation/core@6.4.10 want: ^16.13.0
+145 silly placeDep ROOT use-latest-callback@0.1.9 OK for: @react-navigation/core@6.4.10 want: ^0.1.7
+146 http fetch GET 200 https://registry.npmjs.org/decode-uri-component 92ms (cache miss)
+147 http fetch GET 200 https://registry.npmjs.org/split-on-first 92ms (cache miss)
+148 http fetch GET 200 https://registry.npmjs.org/filter-obj 100ms (cache miss)
+149 http fetch GET 200 https://registry.npmjs.org/strict-uri-encode 118ms (cache miss)
+150 timing idealTree:node_modules/@react-navigation/core Completed in 141ms
+151 timing idealTree:node_modules/@react-navigation/native-stack Completed in 0ms
+152 timing idealTree:node_modules/@react-navigation/routers Completed in 0ms
+153 silly placeDep node_modules/color color-convert@2.0.1 OK for: color@4.2.3 want: ^2.0.1
+154 silly fetch manifest color-name@~1.1.4
+155 silly placeDep ROOT color-string@1.9.1 OK for: color@4.2.3 want: ^1.9.0
+156 silly fetch manifest simple-swizzle@^0.2.2
+157 http fetch GET 200 https://registry.npmjs.org/color-name 75ms (cache miss)
+158 http fetch GET 200 https://registry.npmjs.org/simple-swizzle 85ms (cache miss)
+159 timing idealTree:node_modules/color Completed in 92ms
+160 silly placeDep ROOT simple-swizzle@0.2.2 OK for: color-string@1.9.1 want: ^0.2.2
+161 silly fetch manifest is-arrayish@^0.3.1
+162 http fetch GET 200 https://registry.npmjs.org/is-arrayish 85ms (cache miss)
+163 timing idealTree:node_modules/color-string Completed in 89ms
+164 timing idealTree:node_modules/fast-deep-equal Completed in 0ms
+165 silly placeDep ROOT decode-uri-component@0.2.2 OK for: query-string@7.1.3 want: ^0.2.2
+166 silly placeDep ROOT filter-obj@1.1.0 OK for: query-string@7.1.3 want: ^1.1.0
+167 silly placeDep ROOT split-on-first@1.1.0 OK for: query-string@7.1.3 want: ^1.0.0
+168 silly placeDep ROOT strict-uri-encode@2.0.0 OK for: query-string@7.1.3 want: ^2.0.0
+169 timing idealTree:node_modules/query-string Completed in 8ms
+170 timing idealTree:node_modules/decode-uri-component Completed in 0ms
+171 timing idealTree:node_modules/filter-obj Completed in 0ms
+172 silly placeDep ROOT @egjs/hammerjs@2.0.17 OK for: react-native-gesture-handler@2.13.4 want: ^2.0.17
+173 silly fetch manifest @types/hammerjs@^2.0.36
+174 silly placeDep ROOT hoist-non-react-statics@3.3.2 OK for: react-native-gesture-handler@2.13.4 want: ^3.3.0
+175 silly fetch manifest react-is@^16.7.0
+176 http fetch GET 200 https://registry.npmjs.org/@types%2fhammerjs 128ms (cache miss)
+177 timing idealTree:node_modules/react-native-gesture-handler Completed in 133ms
+178 silly placeDep ROOT @types/hammerjs@2.0.44 OK for: @egjs/hammerjs@2.0.17 want: ^2.0.36
+179 timing idealTree:node_modules/@egjs/hammerjs Completed in 3ms
+180 timing idealTree:node_modules/@types/hammerjs Completed in 0ms
+181 silly placeDep node_modules/hoist-non-react-statics react-is@16.13.1 OK for: hoist-non-react-statics@3.3.2 want: ^16.7.0
+182 timing idealTree:node_modules/hoist-non-react-statics Completed in 1ms
+183 timing idealTree:node_modules/react-native-pager-view Completed in 0ms
+184 silly fetch manifest @babel/core@^7.0.0-0
+185 silly placeDep ROOT @babel/plugin-transform-object-assign@7.23.3 OK for: react-native-reanimated@3.5.4 want: ^7.16.7
+186 timing idealTree:node_modules/react-native-reanimated Completed in 6ms
+187 timing idealTree:node_modules/@babel/plugin-transform-object-assign Completed in 0ms
+188 timing idealTree:node_modules/react-native-safe-area-context Completed in 0ms
+189 silly placeDep ROOT react-freeze@1.0.3 OK for: react-native-screens@3.27.0 want: ^1.0.0
+190 timing idealTree:node_modules/react-native-screens Completed in 4ms
+191 timing idealTree:node_modules/react-freeze Completed in 0ms
+192 timing idealTree:node_modules/react-native-tab-view Completed in 0ms
+193 silly placeDep node_modules/simple-swizzle is-arrayish@0.3.2 OK for: simple-swizzle@0.2.2 want: ^0.3.1
+194 timing idealTree:node_modules/simple-swizzle Completed in 3ms
+195 timing idealTree:node_modules/split-on-first Completed in 0ms
+196 timing idealTree:node_modules/strict-uri-encode Completed in 0ms
+197 timing idealTree:node_modules/use-latest-callback Completed in 0ms
+198 timing idealTree:node_modules/warn-once Completed in 0ms
+199 timing idealTree:node_modules/@react-navigation/core/node_modules/escape-string-regexp Completed in 0ms
+200 timing idealTree:node_modules/@react-navigation/core/node_modules/react-is Completed in 0ms
+201 timing idealTree:node_modules/@react-navigation/native/node_modules/escape-string-regexp Completed in 0ms
+202 silly placeDep node_modules/color color-name@1.1.4 OK for: color-convert@2.0.1 want: ~1.1.4
+203 timing idealTree:node_modules/color/node_modules/color-convert Completed in 2ms
+204 timing idealTree:node_modules/color/node_modules/color-name Completed in 0ms
+205 timing idealTree:node_modules/hoist-non-react-statics/node_modules/react-is Completed in 0ms
+206 timing idealTree:node_modules/simple-swizzle/node_modules/is-arrayish Completed in 0ms
+207 timing idealTree:buildDeps Completed in 10542ms
+208 timing idealTree:fixDepFlags Completed in 12ms
+209 timing idealTree Completed in 11496ms
+210 timing reify:loadTrees Completed in 11497ms
+211 timing reify:diffTrees Completed in 50ms
+212 silly reify moves {}
+213 timing reify:retireShallow Completed in 1ms
+214 timing reify:createSparse Completed in 13ms
+215 timing reify:loadBundles Completed in 0ms
+216 silly audit bulk request {
+216 silly audit   '@ampproject/remapping': [ '2.2.1' ],
+216 silly audit   '@babel/code-frame': [ '7.22.13', '7.10.4' ],
+216 silly audit   '@babel/compat-data': [ '7.23.3' ],
+216 silly audit   '@babel/core': [ '7.23.3' ],
+216 silly audit   '@babel/generator': [ '7.23.3' ],
+216 silly audit   '@babel/helper-annotate-as-pure': [ '7.22.5' ],
+216 silly audit   '@babel/helper-builder-binary-assignment-operator-visitor': [ '7.22.15' ],
+216 silly audit   '@babel/helper-compilation-targets': [ '7.22.15' ],
+216 silly audit   '@babel/helper-create-class-features-plugin': [ '7.22.15' ],
+216 silly audit   '@babel/helper-create-regexp-features-plugin': [ '7.22.15' ],
+216 silly audit   '@babel/helper-define-polyfill-provider': [ '0.4.3' ],
+216 silly audit   '@babel/helper-environment-visitor': [ '7.22.20' ],
+216 silly audit   '@babel/helper-function-name': [ '7.23.0' ],
+216 silly audit   '@babel/helper-hoist-variables': [ '7.22.5' ],
+216 silly audit   '@babel/helper-member-expression-to-functions': [ '7.23.0' ],
+216 silly audit   '@babel/helper-module-imports': [ '7.22.15' ],
+216 silly audit   '@babel/helper-module-transforms': [ '7.23.3' ],
+216 silly audit   '@babel/helper-optimise-call-expression': [ '7.22.5' ],
+216 silly audit   '@babel/helper-plugin-utils': [ '7.22.5' ],
+216 silly audit   '@babel/helper-remap-async-to-generator': [ '7.22.20' ],
+216 silly audit   '@babel/helper-replace-supers': [ '7.22.20' ],
+216 silly audit   '@babel/helper-simple-access': [ '7.22.5' ],
+216 silly audit   '@babel/helper-skip-transparent-expression-wrappers': [ '7.22.5' ],
+216 silly audit   '@babel/helper-split-export-declaration': [ '7.22.6' ],
+216 silly audit   '@babel/helper-string-parser': [ '7.22.5' ],
+216 silly audit   '@babel/helper-validator-identifier': [ '7.22.20' ],
+216 silly audit   '@babel/helper-validator-option': [ '7.22.15' ],
+216 silly audit   '@babel/helper-wrap-function': [ '7.22.20' ],
+216 silly audit   '@babel/helpers': [ '7.23.2' ],
+216 silly audit   '@babel/highlight': [ '7.22.20' ],
+216 silly audit   '@babel/parser': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-bugfix-v8-static-class-fields-redefine-readonly': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-proposal-async-generator-functions': [ '7.20.7' ],
+216 silly audit   '@babel/plugin-proposal-class-properties': [ '7.18.6' ],
+216 silly audit   '@babel/plugin-proposal-decorators': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-proposal-export-default-from': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-proposal-export-namespace-from': [ '7.18.9' ],
+216 silly audit   '@babel/plugin-proposal-nullish-coalescing-operator': [ '7.18.6' ],
+216 silly audit   '@babel/plugin-proposal-numeric-separator': [ '7.18.6' ],
+216 silly audit   '@babel/plugin-proposal-object-rest-spread': [ '7.20.7' ],
+216 silly audit   '@babel/plugin-proposal-optional-catch-binding': [ '7.18.6' ],
+216 silly audit   '@babel/plugin-proposal-optional-chaining': [ '7.21.0' ],
+216 silly audit   '@babel/plugin-proposal-private-property-in-object': [ '7.21.0-placeholder-for-preset-env.2' ],
+216 silly audit   '@babel/plugin-syntax-async-generators': [ '7.8.4' ],
+216 silly audit   '@babel/plugin-syntax-class-properties': [ '7.12.13' ],
+216 silly audit   '@babel/plugin-syntax-class-static-block': [ '7.14.5' ],
+216 silly audit   '@babel/plugin-syntax-decorators': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-syntax-dynamic-import': [ '7.8.3' ],
+216 silly audit   '@babel/plugin-syntax-export-default-from': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-syntax-export-namespace-from': [ '7.8.3' ],
+216 silly audit   '@babel/plugin-syntax-flow': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-syntax-import-assertions': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-syntax-import-attributes': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-syntax-import-meta': [ '7.10.4' ],
+216 silly audit   '@babel/plugin-syntax-json-strings': [ '7.8.3' ],
+216 silly audit   '@babel/plugin-syntax-jsx': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-syntax-logical-assignment-operators': [ '7.10.4' ],
+216 silly audit   '@babel/plugin-syntax-nullish-coalescing-operator': [ '7.8.3' ],
+216 silly audit   '@babel/plugin-syntax-numeric-separator': [ '7.10.4' ],
+216 silly audit   '@babel/plugin-syntax-object-rest-spread': [ '7.8.3' ],
+216 silly audit   '@babel/plugin-syntax-optional-catch-binding': [ '7.8.3' ],
+216 silly audit   '@babel/plugin-syntax-optional-chaining': [ '7.8.3' ],
+216 silly audit   '@babel/plugin-syntax-private-property-in-object': [ '7.14.5' ],
+216 silly audit   '@babel/plugin-syntax-top-level-await': [ '7.14.5' ],
+216 silly audit   '@babel/plugin-syntax-typescript': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-syntax-unicode-sets-regex': [ '7.18.6' ],
+216 silly audit   '@babel/plugin-transform-arrow-functions': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-async-generator-functions': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-async-to-generator': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-block-scoped-functions': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-block-scoping': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-class-properties': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-class-static-block': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-classes': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-computed-properties': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-destructuring': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-dotall-regex': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-duplicate-keys': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-dynamic-import': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-exponentiation-operator': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-export-namespace-from': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-flow-strip-types': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-for-of': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-function-name': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-json-strings': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-literals': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-logical-assignment-operators': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-member-expression-literals': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-modules-amd': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-modules-commonjs': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-modules-systemjs': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-modules-umd': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-named-capturing-groups-regex': [ '7.22.5' ],
+216 silly audit   '@babel/plugin-transform-new-target': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-nullish-coalescing-operator': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-numeric-separator': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-object-rest-spread': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-object-super': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-optional-catch-binding': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-optional-chaining': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-parameters': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-private-methods': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-private-property-in-object': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-property-literals': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-react-display-name': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-react-jsx': [ '7.22.15' ],
+216 silly audit   '@babel/plugin-transform-react-jsx-self': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-react-jsx-source': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-regenerator': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-reserved-words': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-runtime': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-shorthand-properties': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-spread': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-sticky-regex': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-template-literals': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-typeof-symbol': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-typescript': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-unicode-escapes': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-unicode-property-regex': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-unicode-regex': [ '7.23.3' ],
+216 silly audit   '@babel/plugin-transform-unicode-sets-regex': [ '7.23.3' ],
+216 silly audit   '@babel/preset-env': [ '7.23.3' ],
+216 silly audit   '@babel/preset-flow': [ '7.23.3' ],
+216 silly audit   '@babel/preset-modules': [ '0.1.6-no-external-plugins' ],
+216 silly audit   '@babel/preset-typescript': [ '7.23.3' ],
+216 silly audit   '@babel/register': [ '7.22.15' ],
+216 silly audit   '@babel/regjsgen': [ '0.8.0' ],
+216 silly audit   '@babel/runtime': [ '7.23.2' ],
+216 silly audit   '@babel/template': [ '7.22.15' ],
+216 silly audit   '@babel/traverse': [ '7.23.3' ],
+216 silly audit   '@babel/types': [ '7.23.3' ],
+216 silly audit   '@expo/bunyan': [ '4.0.0' ],
+216 silly audit   uuid: [ '8.3.2', '3.4.0', '7.0.3' ],
+216 silly audit   '@expo/cli': [ '0.10.15' ],
+216 silly audit   'ansi-styles': [ '4.3.0', '3.2.1', '5.2.0' ],
+216 silly audit   chalk: [ '4.1.2', '2.4.2' ],
+216 silly audit   'color-convert': [ '2.0.1', '1.9.3' ],
+216 silly audit   'color-name': [ '1.1.4', '1.1.3' ],
+216 silly audit   'has-flag': [ '4.0.0', '3.0.0' ],
+216 silly audit   'lru-cache': [ '6.0.0', '5.1.1' ],
+216 silly audit   semver: [ '7.5.4', '7.5.3', '7.3.2', '5.7.2', '6.3.1' ],
+216 silly audit   'supports-color': [ '7.2.0', '8.1.1', '5.5.0' ],
+216 silly audit   yallist: [ '4.0.0', '3.1.1' ],
+216 silly audit   '@expo/code-signing-certificates': [ '0.0.5' ],
+216 silly audit   '@expo/config': [ '8.1.2' ],
+216 silly audit   '@expo/config-plugins': [ '7.2.5' ],
+216 silly audit   '@expo/config-types': [ '49.0.0' ],
+216 silly audit   '@expo/dev-server': [ '0.5.5' ],
+216 silly audit   'fs-extra': [ '9.0.0', '9.1.0', '8.1.0' ],
+216 silly audit   jsonfile: [ '6.1.0', '4.0.0' ],
+216 silly audit   universalify: [ '2.0.1', '1.0.0', '0.1.2' ],
+216 silly audit   '@expo/devcert': [ '1.1.0' ],
+216 silly audit   debug: [ '3.2.7', '2.6.9', '4.3.4' ],
+216 silly audit   '@expo/env': [ '0.0.5' ],
+216 silly audit   '@expo/image-utils': [ '0.3.22' ],
+216 silly audit   'crypto-random-string': [ '1.0.0', '2.0.0' ],
+216 silly audit   'temp-dir': [ '1.0.0', '2.0.0' ],
+216 silly audit   tempy: [ '0.3.0', '0.7.1' ],
+216 silly audit   'type-fest': [ '0.3.1', '0.12.0', '0.7.1', '0.16.0', '0.21.3' ],
+216 silly audit   'unique-string': [ '1.0.0', '2.0.0' ],
+216 silly audit   '@expo/json-file': [ '8.2.37' ],
+216 silly audit   '@expo/metro-config': [ '0.10.7' ],
+216 silly audit   '@expo/osascript': [ '2.0.33' ],
+216 silly audit   '@expo/package-manager': [ '1.1.2' ],
+216 silly audit   'sudo-prompt': [ '9.1.1', '9.2.1', '8.2.5' ],
+216 silly audit   '@expo/plist': [ '0.0.20' ],
+216 silly audit   '@expo/prebuild-config': [ '6.2.6' ],
+216 silly audit   '@expo/rudder-sdk-node': [ '1.1.1' ],
+216 silly audit   '@expo/sdk-runtime-versions': [ '1.0.0' ],
+216 silly audit   '@expo/spawn-async': [ '1.5.0' ],
+216 silly audit   '@expo/vector-icons': [ '13.0.0' ],
+216 silly audit   '@expo/xcpretty': [ '4.2.2' ],
+216 silly audit   argparse: [ '2.0.1', '1.0.10' ],
+216 silly audit   'js-yaml': [ '4.1.0', '3.14.1' ],
+216 silly audit   '@gar/promisify': [ '1.1.3' ],
+216 silly audit   '@graphql-typed-document-node/core': [ '3.2.0' ],
+216 silly audit   '@hapi/hoek': [ '9.3.0' ],
+216 silly audit   '@hapi/topo': [ '5.1.0' ],
+216 silly audit   '@jest/create-cache-key-function': [ '29.7.0' ],
+216 silly audit   '@jest/types': [ '29.6.3', '26.6.2', '27.5.1' ],
+216 silly audit   '@types/yargs': [ '17.0.31', '15.0.18', '16.0.8' ],
+216 silly audit   '@jest/environment': [ '29.7.0' ],
+216 silly audit   '@jest/fake-timers': [ '29.7.0' ],
+216 silly audit   '@jest/schemas': [ '29.6.3' ],
+216 silly audit   '@jridgewell/gen-mapping': [ '0.3.3' ],
+216 silly audit   '@jridgewell/resolve-uri': [ '3.1.1' ],
+216 silly audit   '@jridgewell/set-array': [ '1.1.2' ],
+216 silly audit   '@jridgewell/source-map': [ '0.3.5' ],
+216 silly audit   '@jridgewell/sourcemap-codec': [ '1.4.15' ],
+216 silly audit   '@jridgewell/trace-mapping': [ '0.3.20' ],
+216 silly audit   '@nodelib/fs.scandir': [ '2.1.5' ],
+216 silly audit   '@nodelib/fs.stat': [ '2.0.5' ],
+216 silly audit   '@nodelib/fs.walk': [ '1.2.8' ],
+216 silly audit   '@npmcli/fs': [ '1.1.1' ],
+216 silly audit   '@npmcli/move-file': [ '1.1.2' ],
+216 silly audit   mkdirp: [ '1.0.4', '0.5.6' ],
+216 silly audit   rimraf: [ '3.0.2', '2.4.5', '2.7.1', '2.6.3' ],
+216 silly audit   '@react-native-community/cli': [ '11.3.7' ],
+216 silly audit   '@react-native-community/cli-clean': [ '11.3.7' ],
+216 silly audit   'cross-spawn': [ '7.0.3', '6.0.5' ],
+216 silly audit   execa: [ '5.1.1', '1.0.0' ],
+216 silly audit   'get-stream': [ '6.0.1', '4.1.0' ],
+216 silly audit   'is-stream': [ '2.0.1', '1.1.0' ],
+216 silly audit   'mimic-fn': [ '2.1.0', '1.2.0' ],
+216 silly audit   'npm-run-path': [ '4.0.1', '2.0.2' ],
+216 silly audit   onetime: [ '5.1.2', '2.0.1' ],
+216 silly audit   'path-key': [ '3.1.1', '2.0.1' ],
+216 silly audit   'shebang-command': [ '2.0.0', '1.2.0' ],
+216 silly audit   'shebang-regex': [ '3.0.0', '1.0.0' ],
+216 silly audit   which: [ '2.0.2', '1.3.1' ],
+216 silly audit   '@react-native-community/cli-config': [ '11.3.7' ],
+216 silly audit   '@react-native-community/cli-debugger-ui': [ '11.3.7' ],
+216 silly audit   '@react-native-community/cli-doctor': [ '11.3.7' ],
+216 silly audit   'cli-cursor': [ '3.1.0', '2.1.0' ],
+216 silly audit   'log-symbols': [ '4.1.0', '2.2.0' ],
+216 silly audit   ora: [ '5.4.1', '3.4.0' ],
+216 silly audit   'strip-ansi': [ '6.0.1', '5.2.0' ],
+216 silly audit   'restore-cursor': [ '3.1.0', '2.0.0' ],
+216 silly audit   '@react-native-community/cli-hermes': [ '11.3.7' ],
+216 silly audit   '@react-native-community/cli-platform-android': [ '11.3.7' ],
+216 silly audit   '@react-native-community/cli-platform-ios': [ '11.3.7' ],
+216 silly audit   '@react-native-community/cli-plugin-metro': [ '11.3.7' ],
+216 silly audit   '@react-native-community/cli-server-api': [ '11.3.7' ],
+216 silly audit   ws: [ '7.5.9', '6.2.2', '8.14.2' ],
+216 silly audit   '@react-native-community/cli-tools': [ '11.3.7' ],
+216 silly audit   'is-wsl': [ '1.1.0', '2.2.0' ],
+216 silly audit   open: [ '6.4.0', '8.4.2' ],
+216 silly audit   '@react-native-community/cli-types': [ '11.3.7' ],
+216 silly audit   commander: [ '9.5.0', '7.2.0', '4.1.1', '2.20.3', '2.13.0' ],
+216 silly audit   'find-up': [ '4.1.0', '5.0.0', '3.0.0' ],
+216 silly audit   'locate-path': [ '5.0.0', '6.0.0', '3.0.0' ],
+216 silly audit   'p-limit': [ '2.3.0', '3.1.0' ],
+216 silly audit   'p-locate': [ '4.1.0', '5.0.0', '3.0.0' ],
+216 silly audit   '@react-native/assets-registry': [ '0.72.0' ],
+216 silly audit   '@react-native/codegen': [ '0.72.7' ],
+216 silly audit   '@react-native/gradle-plugin': [ '0.72.11' ],
+216 silly audit   '@react-native/js-polyfills': [ '0.72.1' ],
+216 silly audit   '@react-native/normalize-color': [ '2.1.0' ],
+216 silly audit   '@react-native/normalize-colors': [ '0.72.0' ],
+216 silly audit   '@react-native/virtualized-lists': [ '0.72.8' ],
+216 silly audit   '@segment/loosely-validate-event': [ '2.0.0' ],
+216 silly audit   '@sideway/address': [ '4.1.4' ],
+216 silly audit   '@sideway/formula': [ '3.0.1' ],
+216 silly audit   '@sideway/pinpoint': [ '2.0.0' ],
+216 silly audit   '@sinclair/typebox': [ '0.27.8' ],
+216 silly audit   '@sinonjs/commons': [ '3.0.0' ],
+216 silly audit   '@sinonjs/fake-timers': [ '10.3.0' ],
+216 silly audit   '@types/istanbul-lib-coverage': [ '2.0.6' ],
+216 silly audit   '@types/istanbul-lib-report': [ '3.0.3' ],
+216 silly audit   '@types/istanbul-reports': [ '3.0.4' ],
+216 silly audit   '@types/node': [ '20.9.1' ],
+216 silly audit   '@types/stack-utils': [ '2.0.3' ],
+216 silly audit   '@types/yargs-parser': [ '21.0.3' ],
+216 silly audit   '@urql/core': [ '2.3.6' ],
+216 silly audit   '@urql/exchange-retry': [ '0.3.0' ],
+216 silly audit   '@xmldom/xmldom': [ '0.7.13', '0.8.10' ],
+216 silly audit   'abort-controller': [ '3.0.0' ],
+216 silly audit   accepts: [ '1.3.8' ],
+216 silly audit   acorn: [ '8.11.2' ],
+216 silly audit   'agent-base': [ '6.0.2' ],
+216 silly audit   'aggregate-error': [ '3.1.0' ],
+216 silly audit   anser: [ '1.4.10' ],
+216 silly audit   'ansi-escapes': [ '4.3.2' ],
+216 silly audit   'ansi-fragments': [ '0.2.1' ],
+216 silly audit   'ansi-regex': [ '5.0.1', '4.1.1' ],
+216 silly audit   'any-promise': [ '1.3.0' ],
+216 silly audit   anymatch: [ '3.1.3' ],
+216 silly audit   appdirsjs: [ '1.2.7' ],
+216 silly audit   'application-config-path': [ '0.1.1' ],
+216 silly audit   arg: [ '4.1.0' ],
+216 silly audit   'array-union': [ '2.1.0' ],
+216 silly audit   asap: [ '2.0.6' ],
+216 silly audit   'ast-types': [ '0.15.2' ],
+216 silly audit   'astral-regex': [ '1.0.0' ],
+216 silly audit   async: [ '3.2.5' ],
+216 silly audit   'async-limiter': [ '1.0.1' ],
+216 silly audit   asynckit: [ '0.4.0' ],
+216 silly audit   'at-least-node': [ '1.0.0' ],
+216 silly audit   'babel-core': [ '7.0.0-bridge.0' ],
+216 silly audit   'babel-plugin-module-resolver': [ '5.0.0' ],
+216 silly audit   'brace-expansion': [ '2.0.1', '1.1.11' ],
+216 silly audit   glob: [ '8.1.0', '7.1.6', '6.0.4' ],
+216 silly audit   minimatch: [ '5.1.6', '3.1.2' ],
+216 silly audit   'babel-plugin-polyfill-corejs2': [ '0.4.6' ],
+216 silly audit   'babel-plugin-polyfill-corejs3': [ '0.8.6' ],
+216 silly audit   'babel-plugin-polyfill-regenerator': [ '0.5.3' ],
+216 silly audit   'babel-plugin-react-native-web': [ '0.18.12' ],
+216 silly audit   'babel-plugin-syntax-trailing-function-commas': [ '7.0.0-beta.0' ],
+216 silly audit   'babel-plugin-transform-flow-enums': [ '0.0.2' ],
+216 silly audit   'babel-preset-expo': [ '9.5.2' ],
+216 silly audit   'babel-preset-fbjs': [ '3.4.0' ],
+216 silly audit   'balanced-match': [ '1.0.2' ],
+216 silly audit   'base64-js': [ '1.5.1' ],
+216 silly audit   'better-opn': [ '3.0.2' ],
+216 silly audit   'big-integer': [ '1.6.51' ],
+216 silly audit   bl: [ '4.1.0' ],
+216 silly audit   'readable-stream': [ '3.6.2', '2.3.8' ],
+216 silly audit   'blueimp-md5': [ '2.19.0' ],
+216 silly audit   'body-parser': [ '1.20.2' ],
+216 silly audit   ms: [ '2.0.0', '2.1.2', '2.1.3' ],
+216 silly audit   'bplist-creator': [ '0.1.0' ],
+216 silly audit   'bplist-parser': [ '0.3.2', '0.3.1' ],
+216 silly audit   braces: [ '3.0.2' ],
+216 silly audit   browserslist: [ '4.22.1' ],
+216 silly audit   bser: [ '2.1.1' ],
+216 silly audit   buffer: [ '5.7.1' ],
+216 silly audit   'buffer-alloc': [ '1.2.0' ],
+216 silly audit   'buffer-alloc-unsafe': [ '1.1.0' ],
+216 silly audit   'buffer-fill': [ '1.0.0' ],
+216 silly audit   'buffer-from': [ '1.1.2' ],
+216 silly audit   builtins: [ '1.0.3' ],
+216 silly audit   bytes: [ '3.1.2', '3.0.0' ],
+216 silly audit   cacache: [ '15.3.0' ],
+216 silly audit   'call-bind': [ '1.0.5' ],
+216 silly audit   'caller-callsite': [ '2.0.0' ],
+216 silly audit   'caller-path': [ '2.0.0' ],
+216 silly audit   callsites: [ '2.0.0' ],
+216 silly audit   camelcase: [ '6.3.0', '5.3.1' ],
+216 silly audit   'caniuse-lite': [ '1.0.30001563' ],
+216 silly audit   charenc: [ '0.0.2' ],
+216 silly audit   chownr: [ '2.0.0' ],
+216 silly audit   'ci-info': [ '3.9.0', '2.0.0' ],
+216 silly audit   'clean-stack': [ '2.2.0' ],
+216 silly audit   'cli-spinners': [ '2.9.1' ],
+216 silly audit   cliui: [ '8.0.1', '6.0.0' ],
+216 silly audit   clone: [ '2.1.2', '1.0.4' ],
+216 silly audit   'clone-deep': [ '4.0.1' ],
+216 silly audit   colorette: [ '1.4.0' ],
+216 silly audit   'combined-stream': [ '1.0.8' ],
+216 silly audit   'command-exists': [ '1.2.9' ],
+216 silly audit   commondir: [ '1.0.1' ],
+216 silly audit   'compare-versions': [ '3.6.0' ],
+216 silly audit   'component-type': [ '1.2.2' ],
+216 silly audit   compressible: [ '2.0.18' ],
+216 silly audit   compression: [ '1.7.4' ],
+216 silly audit   'concat-map': [ '0.0.1' ],
+216 silly audit   connect: [ '3.7.0' ],
+216 silly audit   'content-type': [ '1.0.5' ],
+216 silly audit   'convert-source-map': [ '2.0.0' ],
+216 silly audit   'core-js-compat': [ '3.33.2' ],
+216 silly audit   'core-util-is': [ '1.0.3' ],
+216 silly audit   cosmiconfig: [ '5.2.1' ],
+216 silly audit   'cross-fetch': [ '3.1.8' ],
+216 silly audit   crypt: [ '0.0.2' ],
+216 silly audit   'dag-map': [ '1.0.2' ],
+216 silly audit   dayjs: [ '1.11.10' ],
+216 silly audit   decamelize: [ '1.2.0' ],
+216 silly audit   'deep-extend': [ '0.6.0' ],
+216 silly audit   deepmerge: [ '4.3.1' ],
+216 silly audit   'default-gateway': [ '4.2.0' ],
+216 silly audit   defaults: [ '1.0.4' ],
+216 silly audit   'define-data-property': [ '1.1.1' ],
+216 silly audit   'define-lazy-prop': [ '2.0.0' ],
+216 silly audit   del: [ '6.1.1' ],
+216 silly audit   'delayed-stream': [ '1.0.0' ],
+216 silly audit   denodeify: [ '1.2.1' ],
+216 silly audit   depd: [ '2.0.0' ],
+216 silly audit   'deprecated-react-native-prop-types': [ '4.1.0' ],
+216 silly audit   destroy: [ '1.2.0' ],
+216 silly audit   'detect-libc': [ '1.0.3' ],
+216 silly audit   'dir-glob': [ '3.0.1' ],
+216 silly audit   dotenv: [ '16.0.3' ],
+216 silly audit   'dotenv-expand': [ '10.0.0' ],
+216 silly audit   'ee-first': [ '1.1.1' ],
+216 silly audit   'electron-to-chromium': [ '1.4.587' ],
+216 silly audit   'emoji-regex': [ '8.0.0' ],
+216 silly audit   encodeurl: [ '1.0.2' ],
+216 silly audit   'end-of-stream': [ '1.4.4' ],
+216 silly audit   'env-editor': [ '0.4.2' ],
+216 silly audit   envinfo: [ '7.11.0' ],
+216 silly audit   eol: [ '0.9.1' ],
+216 silly audit   'error-ex': [ '1.3.2' ],
+216 silly audit   'error-stack-parser': [ '2.1.4' ],
+216 silly audit   errorhandler: [ '1.5.1' ],
+216 silly audit   escalade: [ '3.1.1' ],
+216 silly audit   'escape-html': [ '1.0.3' ],
+216 silly audit   'escape-string-regexp': [ '1.0.5', '2.0.0', '4.0.0' ],
+216 silly audit   esprima: [ '4.0.1' ],
+216 silly audit   esutils: [ '2.0.3' ],
+216 silly audit   etag: [ '1.8.1' ],
+216 silly audit   'event-target-shim': [ '5.0.1' ],
+216 silly audit   'exec-async': [ '2.2.0' ],
+216 silly audit   expo: [ '49.0.18' ],
+216 silly audit   'expo-application': [ '5.3.1' ],
+216 silly audit   'expo-asset': [ '8.10.1' ],
+216 silly audit   'expo-constants': [ '14.4.2' ],
+216 silly audit   'expo-file-system': [ '15.4.4' ],
+216 silly audit   'expo-font': [ '11.4.0' ],
+216 silly audit   'expo-keep-awake': [ '12.3.0' ],
+216 silly audit   'expo-modules-autolinking': [ '1.5.1' ],
+216 silly audit   'expo-modules-core': [ '1.5.11' ],
+216 silly audit   'expo-status-bar': [ '1.6.0' ],
+216 silly audit   'fast-glob': [ '3.3.2' ],
+216 silly audit   'fast-xml-parser': [ '4.3.2' ],
+216 silly audit   fastq: [ '1.15.0' ],
+216 silly audit   'fb-watchman': [ '2.0.2' ],
+216 silly audit   fbemitter: [ '3.0.0' ],
+216 silly audit   fbjs: [ '3.0.5' ],
+216 silly audit   'fbjs-css-vars': [ '1.0.2' ],
+216 silly audit   'fetch-retry': [ '4.1.1' ],
+216 silly audit   'fill-range': [ '7.0.1' ],
+216 silly audit   finalhandler: [ '1.1.2' ],
+216 silly audit   'on-finished': [ '2.3.0', '2.4.1' ],
+216 silly audit   'find-babel-config': [ '2.0.0' ],
+216 silly audit   'find-cache-dir': [ '2.1.0' ],
+216 silly audit   'find-yarn-workspace-root': [ '2.0.0' ],
+216 silly audit   'flow-enums-runtime': [ '0.0.5' ],
+216 silly audit   'flow-parser': [ '0.206.0' ],
+216 silly audit   fontfaceobserver: [ '2.3.0' ],
+216 silly audit   'form-data': [ '3.0.1' ],
+216 silly audit   'freeport-async': [ '2.0.0' ],
+216 silly audit   fresh: [ '0.5.2' ],
+216 silly audit   'fs-minipass': [ '2.1.0' ],
+216 silly audit   'fs.realpath': [ '1.0.0' ],
+216 silly audit   fsevents: [ '2.3.3' ],
+216 silly audit   'function-bind': [ '1.1.2' ],
+216 silly audit   gensync: [ '1.0.0-beta.2' ],
+216 silly audit   'get-caller-file': [ '2.0.5' ],
+216 silly audit   'get-intrinsic': [ '1.2.2' ],
+216 silly audit   'get-port': [ '3.2.0' ],
+216 silly audit   getenv: [ '1.0.0' ],
+216 silly audit   'glob-parent': [ '5.1.2' ],
+216 silly audit   globals: [ '11.12.0' ],
+216 silly audit   globby: [ '11.1.0' ],
+216 silly audit   gopd: [ '1.0.1' ],
+216 silly audit   'graceful-fs': [ '4.2.11' ],
+216 silly audit   graphql: [ '15.8.0' ],
+216 silly audit   'graphql-tag': [ '2.12.6' ],
+216 silly audit   'has-property-descriptors': [ '1.0.1' ],
+216 silly audit   'has-proto': [ '1.0.1' ],
+216 silly audit   'has-symbols': [ '1.0.3' ],
+216 silly audit   hasown: [ '2.0.0' ],
+216 silly audit   'hermes-estree': [ '0.12.0' ],
+216 silly audit   'hermes-parser': [ '0.12.0' ],
+216 silly audit   'hermes-profile-transformer': [ '0.0.6' ],
+216 silly audit   'hosted-git-info': [ '3.0.8' ],
+216 silly audit   'http-errors': [ '2.0.0' ],
+216 silly audit   statuses: [ '2.0.1', '1.5.0' ],
+216 silly audit   'https-proxy-agent': [ '5.0.1' ],
+216 silly audit   'human-signals': [ '2.1.0' ],
+216 silly audit   'iconv-lite': [ '0.4.24' ],
+216 silly audit   ieee754: [ '1.2.1' ],
+216 silly audit   ignore: [ '5.3.0' ],
+216 silly audit   'image-size': [ '1.0.2' ],
+216 silly audit   'import-fresh': [ '2.0.0' ],
+216 silly audit   'resolve-from': [ '3.0.0', '5.0.0' ],
+216 silly audit   imurmurhash: [ '0.1.4' ],
+216 silly audit   'indent-string': [ '4.0.0' ],
+216 silly audit   'infer-owner': [ '1.0.4' ],
+216 silly audit   inflight: [ '1.0.6' ],
+216 silly audit   inherits: [ '2.0.4' ],
+216 silly audit   ini: [ '1.3.8' ],
+216 silly audit   'internal-ip': [ '4.3.0' ],
+216 silly audit   invariant: [ '2.2.4' ],
+216 silly audit   ip: [ '1.1.8' ],
+216 silly audit   'ip-regex': [ '2.1.0' ],
+216 silly audit   'ipaddr.js': [ '1.9.1' ],
+216 silly audit   'is-arrayish': [ '0.2.1', '0.3.2' ],
+216 silly audit   'is-buffer': [ '1.1.6' ],
+216 silly audit   'is-core-module': [ '2.13.1' ],
+216 silly audit   'is-directory': [ '0.3.1' ],
+216 silly audit   'is-docker': [ '2.2.1' ],
+216 silly audit   'is-extglob': [ '2.1.1', '1.0.0' ],
+216 silly audit   'is-fullwidth-code-point': [ '2.0.0', '3.0.0' ],
+216 silly audit   'is-glob': [ '4.0.3', '2.0.1' ],
+216 silly audit   'is-interactive': [ '1.0.0' ],
+216 silly audit   'is-invalid-path': [ '0.1.0' ],
+216 silly audit   'is-number': [ '7.0.0' ],
+216 silly audit   'is-path-cwd': [ '2.2.0' ],
+216 silly audit   'is-path-inside': [ '3.0.3' ],
+216 silly audit   'is-plain-object': [ '2.0.4' ],
+216 silly audit   'is-unicode-supported': [ '0.1.0' ],
+216 silly audit   'is-valid-path': [ '0.1.1' ],
+216 silly audit   isarray: [ '1.0.0' ],
+216 silly audit   isexe: [ '2.0.0' ],
+216 silly audit   isobject: [ '3.0.1' ],
+216 silly audit   'jest-environment-node': [ '29.7.0' ],
+216 silly audit   'jest-get-type': [ '29.6.3' ],
+216 silly audit   'jest-message-util': [ '29.7.0' ],
+216 silly audit   'pretty-format': [ '29.7.0', '26.6.2' ],
+216 silly audit   'react-is': [ '18.2.0', '16.13.1', '17.0.2' ],
+216 silly audit   'jest-mock': [ '29.7.0' ],
+216 silly audit   'jest-regex-util': [ '27.5.1' ],
+216 silly audit   'jest-util': [ '29.7.0', '27.5.1' ],
+216 silly audit   'jest-validate': [ '29.7.0' ],
+216 silly audit   'jest-worker': [ '27.5.1' ],
+216 silly audit   'jimp-compact': [ '0.16.1' ],
+216 silly audit   joi: [ '17.11.0' ],
+216 silly audit   'join-component': [ '1.1.0' ],
+216 silly audit   'js-tokens': [ '4.0.0' ],
+216 silly audit   'jsc-android': [ '250231.0.0' ],
+216 silly audit   'jsc-safe-url': [ '0.2.4' ],
+216 silly audit   jscodeshift: [ '0.14.0' ],
+216 silly audit   jsesc: [ '2.5.2', '0.5.0' ],
+216 silly audit   'json-parse-better-errors': [ '1.0.2' ],
+216 silly audit   'json-schema-deref-sync': [ '0.13.0' ],
+216 silly audit   md5: [ '2.2.1', '2.3.0' ],
+216 silly audit   json5: [ '2.2.3' ],
+216 silly audit   'kind-of': [ '6.0.3' ],
+216 silly audit   kleur: [ '3.0.3' ],
+216 silly audit   leven: [ '3.1.0' ],
+216 silly audit   lightningcss: [ '1.19.0' ],
+216 silly audit   'lightningcss-darwin-arm64': [ '1.19.0' ],
+216 silly audit   'lightningcss-darwin-x64': [ '1.19.0' ],
+216 silly audit   'lightningcss-linux-arm-gnueabihf': [ '1.19.0' ],
+216 silly audit   'lightningcss-linux-arm64-gnu': [ '1.19.0' ],
+216 silly audit   'lightningcss-linux-arm64-musl': [ '1.19.0' ],
+216 silly audit   'lightningcss-linux-x64-gnu': [ '1.19.0' ],
+216 silly audit   'lightningcss-linux-x64-musl': [ '1.19.0' ],
+216 silly audit   'lightningcss-win32-x64-msvc': [ '1.19.0' ],
+216 silly audit   'lines-and-columns': [ '1.2.4' ],
+216 silly audit   lodash: [ '4.17.21' ],
+216 silly audit   'lodash.debounce': [ '4.0.8' ],
+216 silly audit   'lodash.throttle': [ '4.1.1' ],
+216 silly audit   logkitty: [ '0.7.1' ],
+216 silly audit   'wrap-ansi': [ '6.2.0', '7.0.0' ],
+216 silly audit   y18n: [ '4.0.3', '5.0.8' ],
+216 silly audit   yargs: [ '15.4.1', '17.7.2' ],
+216 silly audit   'yargs-parser': [ '18.1.3', '21.1.1' ],
+216 silly audit   'loose-envify': [ '1.4.0' ],
+216 silly audit   'make-dir': [ '2.1.0' ],
+216 silly audit   makeerror: [ '1.0.12' ],
+216 silly audit   'md5-file': [ '3.2.3' ],
+216 silly audit   md5hex: [ '1.0.0' ],
+216 silly audit   'media-typer': [ '0.3.0' ],
+216 silly audit   'memoize-one': [ '5.2.1' ],
+216 silly audit   'memory-cache': [ '0.2.0' ],
+216 silly audit   'merge-stream': [ '2.0.0' ],
+216 silly audit   merge2: [ '1.4.1' ],
+216 silly audit   metro: [ '0.76.8' ],
+216 silly audit   'metro-babel-transformer': [ '0.76.8' ],
+216 silly audit   'metro-cache': [ '0.76.8' ],
+216 silly audit   'metro-cache-key': [ '0.76.8' ],
+216 silly audit   'metro-config': [ '0.76.8' ],
+216 silly audit   'metro-core': [ '0.76.8' ],
+216 silly audit   'metro-file-map': [ '0.76.8' ],
+216 silly audit   'metro-inspector-proxy': [ '0.76.8' ],
+216 silly audit   'metro-minify-terser': [ '0.76.8' ],
+216 silly audit   'metro-minify-uglify': [ '0.76.8' ],
+216 silly audit   'metro-react-native-babel-preset': [ '0.76.8' ],
+216 silly audit   'metro-react-native-babel-transformer': [ '0.76.8' ],
+216 silly audit   'metro-resolver': [ '0.76.8' ],
+216 silly audit   'metro-runtime': [ '0.76.8' ],
+216 silly audit   'metro-source-map': [ '0.76.8' ],
+216 silly audit   'source-map': [ '0.5.7', '0.6.1', '0.7.4' ],
+216 silly audit   'metro-symbolicate': [ '0.76.8' ],
+216 silly audit   'metro-transform-plugins': [ '0.76.8' ],
+216 silly audit   'metro-transform-worker': [ '0.76.8' ],
+216 silly audit   'serialize-error': [ '2.1.0', '6.0.0' ],
+216 silly audit   micromatch: [ '4.0.5' ],
+216 silly audit   mime: [ '2.6.0', '1.6.0' ],
+216 silly audit   'mime-db': [ '1.52.0' ],
+216 silly audit   'mime-types': [ '2.1.35' ],
+216 silly audit   minimist: [ '1.2.8' ],
+216 silly audit   minipass: [ '3.1.6', '5.0.0' ],
+216 silly audit   'minipass-collect': [ '1.0.2' ],
+216 silly audit   'minipass-flush': [ '1.0.5' ],
+216 silly audit   'minipass-pipeline': [ '1.2.4' ],
+216 silly audit   minizlib: [ '2.1.2' ],
+216 silly audit   mv: [ '2.1.1' ],
+216 silly audit   mz: [ '2.7.0' ],
+216 silly audit   nanoid: [ '3.3.7' ],
+216 silly audit   ncp: [ '2.0.0' ],
+216 silly audit   negotiator: [ '0.6.3' ],
+216 silly audit   'neo-async': [ '2.6.2' ],
+216 silly audit   'nested-error-stacks': [ '2.0.1' ],
+216 silly audit   'nice-try': [ '1.0.5' ],
+216 silly audit   nocache: [ '3.0.4' ],
+216 silly audit   'node-abort-controller': [ '3.1.1' ],
+216 silly audit   'node-dir': [ '0.1.17' ],
+216 silly audit   'node-fetch': [ '2.7.0' ],
+216 silly audit   'node-forge': [ '1.3.1' ],
+216 silly audit   'node-int64': [ '0.4.0' ],
+216 silly audit   'node-releases': [ '2.0.13' ],
+216 silly audit   'node-stream-zip': [ '1.15.0' ],
+216 silly audit   'normalize-path': [ '3.0.0' ],
+216 silly audit   'npm-package-arg': [ '7.0.0' ],
+216 silly audit   nullthrows: [ '1.1.1' ],
+216 silly audit   ob1: [ '0.76.8' ],
+216 silly audit   'object-assign': [ '4.1.1' ],
+216 silly audit   'object-inspect': [ '1.13.1' ],
+216 silly audit   'on-headers': [ '1.0.2' ],
+216 silly audit   once: [ '1.4.0' ],
+216 silly audit   'os-homedir': [ '1.0.2' ],
+216 silly audit   'os-tmpdir': [ '1.0.2' ],
+216 silly audit   osenv: [ '0.1.5' ],
+216 silly audit   'p-finally': [ '1.0.0' ],
+216 silly audit   'p-map': [ '4.0.0' ],
+216 silly audit   'p-try': [ '2.2.0' ],
+216 silly audit   'parse-json': [ '4.0.0' ],
+216 silly audit   'parse-png': [ '2.1.0' ],
+216 silly audit   parseurl: [ '1.3.3' ],
+216 silly audit   'password-prompt': [ '1.1.3' ],
+216 silly audit   'path-browserify': [ '1.0.1' ],
+216 silly audit   'path-exists': [ '4.0.0', '3.0.0' ],
+216 silly audit   'path-is-absolute': [ '1.0.1' ],
+216 silly audit   'path-parse': [ '1.0.7' ],
+216 silly audit   'path-type': [ '4.0.0' ],
+216 silly audit   picocolors: [ '1.0.0' ],
+216 silly audit   picomatch: [ '2.3.1' ],
+216 silly audit   pify: [ '4.0.1' ],
+216 silly audit   pirates: [ '4.0.6' ],
+216 silly audit   'pkg-dir': [ '3.0.0' ],
+216 silly audit   'pkg-up': [ '3.1.0' ],
+216 silly audit   plist: [ '3.1.0' ],
+216 silly audit   xmlbuilder: [ '15.1.1', '11.0.1', '14.0.0' ],
+216 silly audit   pngjs: [ '3.4.0' ],
+216 silly audit   postcss: [ '8.4.31' ],
+216 silly audit   'pretty-bytes': [ '5.6.0' ],
+216 silly audit   'process-nextick-args': [ '2.0.1' ],
+216 silly audit   progress: [ '2.0.3' ],
+216 silly audit   promise: [ '7.3.1', '8.3.0' ],
+216 silly audit   'promise-inflight': [ '1.0.1' ],
+216 silly audit   prompts: [ '2.4.2' ],
+216 silly audit   'prop-types': [ '15.8.1' ],
+216 silly audit   pump: [ '3.0.0' ],
+216 silly audit   'qrcode-terminal': [ '0.11.0' ],
+216 silly audit   qs: [ '6.11.0' ],
+216 silly audit   querystringify: [ '2.2.0' ],
+216 silly audit   queue: [ '6.0.2' ],
+216 silly audit   'queue-microtask': [ '1.2.3' ],
+216 silly audit   'range-parser': [ '1.2.1' ],
+216 silly audit   'raw-body': [ '2.5.2' ],
+216 silly audit   rc: [ '1.2.8' ],
+216 silly audit   react: [ '18.2.0' ],
+216 silly audit   'react-devtools-core': [ '4.28.5' ],
+216 silly audit   'react-native': [ '0.72.6' ],
+216 silly audit   'regenerator-runtime': [ '0.13.11', '0.14.0' ],
+216 silly audit   'react-refresh': [ '0.4.3' ],
+216 silly audit   'react-shallow-renderer': [ '16.15.0' ],
+216 silly audit   readline: [ '1.3.0' ],
+216 silly audit   recast: [ '0.21.5' ],
+216 silly audit   regenerate: [ '1.4.2' ],
+216 silly audit   'regenerate-unicode-properties': [ '10.1.1' ],
+216 silly audit   'regenerator-transform': [ '0.15.2' ],
+216 silly audit   'regexpu-core': [ '5.3.2' ],
+216 silly audit   regjsparser: [ '0.9.1' ],
+216 silly audit   'remove-trailing-slash': [ '0.1.1' ],
+216 silly audit   'require-directory': [ '2.1.1' ],
+216 silly audit   'require-from-string': [ '2.0.2' ],
+216 silly audit   'require-main-filename': [ '2.0.0' ],
+216 silly audit   requireg: [ '0.2.2' ],
+216 silly audit   resolve: [ '1.7.1', '1.22.8' ],
+216 silly audit   'requires-port': [ '1.0.0' ],
+216 silly audit   reselect: [ '4.1.8' ],
+216 silly audit   reusify: [ '1.0.4' ],
+216 silly audit   'run-parallel': [ '1.2.0' ],
+216 silly audit   'safe-buffer': [ '5.1.2' ],
+216 silly audit   'safe-json-stringify': [ '1.2.0' ],
+216 silly audit   'safer-buffer': [ '2.1.2' ],
+216 silly audit   sax: [ '1.3.0' ],
+216 silly audit   scheduler: [ '0.24.0-canary-efb381bbf-20230505' ],
+216 silly audit   send: [ '0.18.0' ],
+216 silly audit   'serve-static': [ '1.15.0' ],
+216 silly audit   'set-blocking': [ '2.0.0' ],
+216 silly audit   'set-function-length': [ '1.1.1' ],
+216 silly audit   setimmediate: [ '1.0.5' ],
+216 silly audit   setprototypeof: [ '1.2.0' ],
+216 silly audit   'shallow-clone': [ '3.0.1' ],
+216 silly audit   'shell-quote': [ '1.8.1' ],
+216 silly audit   'side-channel': [ '1.0.4' ],
+216 silly audit   'signal-exit': [ '3.0.7' ],
+216 silly audit   'simple-plist': [ '1.3.1' ],
+216 silly audit   sisteransi: [ '1.0.5' ],
+216 silly audit   slash: [ '3.0.0' ],
+216 silly audit   'slice-ansi': [ '2.1.0' ],
+216 silly audit   slugify: [ '1.6.6' ],
+216 silly audit   'source-map-js': [ '1.0.2' ],
+216 silly audit   'source-map-support': [ '0.5.21' ],
+216 silly audit   split: [ '1.0.1' ],
+216 silly audit   'sprintf-js': [ '1.0.3' ],
+216 silly audit   ssri: [ '8.0.1' ],
+216 silly audit   'stack-utils': [ '2.0.6' ],
+216 silly audit   stackframe: [ '1.3.4' ],
+216 silly audit   'stacktrace-parser': [ '0.1.10' ],
+216 silly audit   'stream-buffers': [ '2.2.0' ],
+216 silly audit   string_decoder: [ '1.1.1' ],
+216 silly audit   'string-width': [ '4.2.3' ],
+216 silly audit   'strip-eof': [ '1.0.0' ],
+216 silly audit   'strip-final-newline': [ '2.0.0' ],
+216 silly audit   'strip-json-comments': [ '2.0.1' ],
+216 silly audit   strnum: [ '1.0.5' ],
+216 silly audit   'structured-headers': [ '0.4.1' ],
+216 silly audit   sucrase: [ '3.34.0' ],
+216 silly audit   'supports-hyperlinks': [ '2.3.0' ],
+216 silly audit   'supports-preserve-symlinks-flag': [ '1.0.0' ],
+216 silly audit   tar: [ '6.2.0' ],
+216 silly audit   temp: [ '0.8.4' ],
+216 silly audit   'terminal-link': [ '2.1.1' ],
+216 silly audit   terser: [ '5.24.0' ],
+216 silly audit   'text-table': [ '0.2.0' ],
+216 silly audit   thenify: [ '3.3.1' ],
+216 silly audit   'thenify-all': [ '1.6.0' ],
+216 silly audit   throat: [ '5.0.0' ],
+216 silly audit   through: [ '2.3.8' ],
+216 silly audit   through2: [ '2.0.5' ],
+216 silly audit   tmp: [ '0.0.33' ],
+216 silly audit   tmpl: [ '1.0.5' ],
+216 silly audit   'to-fast-properties': [ '2.0.0' ],
+216 silly audit   'to-regex-range': [ '5.0.1' ],
+216 silly audit   toidentifier: [ '1.0.1' ],
+216 silly audit   tr46: [ '0.0.3' ],
+216 silly audit   traverse: [ '0.6.7' ],
+216 silly audit   'ts-interface-checker': [ '0.1.13' ],
+216 silly audit   tslib: [ '2.6.2' ],
+216 silly audit   'type-detect': [ '4.0.8' ],
+216 silly audit   'type-is': [ '1.6.18' ],
+216 silly audit   'ua-parser-js': [ '1.0.37' ],
+216 silly audit   'uglify-es': [ '3.3.9' ],
+216 silly audit   'undici-types': [ '5.26.5' ],
+216 silly audit   'unicode-canonical-property-names-ecmascript': [ '2.0.0' ],
+216 silly audit   'unicode-match-property-ecmascript': [ '2.0.0' ],
+216 silly audit   'unicode-match-property-value-ecmascript': [ '2.1.0' ],
+216 silly audit   'unicode-property-aliases-ecmascript': [ '2.1.0' ],
+216 silly audit   'unique-filename': [ '1.1.1' ],
+216 silly audit   'unique-slug': [ '2.0.2' ],
+216 silly audit   unpipe: [ '1.0.0' ],
+216 silly audit   'update-browserslist-db': [ '1.0.13' ],
+216 silly audit   'url-join': [ '4.0.0' ],
+216 silly audit   'url-parse': [ '1.5.10' ],
+216 silly audit   'use-sync-external-store': [ '1.2.0' ],
+216 silly audit   'util-deprecate': [ '1.0.2' ],
+216 silly audit   'utils-merge': [ '1.0.1' ],
+216 silly audit   'valid-url': [ '1.0.9' ],
+216 silly audit   'validate-npm-package-name': [ '3.0.0' ],
+216 silly audit   vary: [ '1.1.2' ],
+216 silly audit   vlq: [ '1.0.1' ],
+216 silly audit   walker: [ '1.0.8' ],
+216 silly audit   wcwidth: [ '1.0.1' ],
+216 silly audit   'webidl-conversions': [ '3.0.1' ],
+216 silly audit   'whatwg-fetch': [ '3.6.19' ],
+216 silly audit   'whatwg-url': [ '5.0.0' ],
+216 silly audit   'which-module': [ '2.0.1' ],
+216 silly audit   wonka: [ '4.0.15' ],
+216 silly audit   wrappy: [ '1.0.2' ],
+216 silly audit   'write-file-atomic': [ '2.4.3' ],
+216 silly audit   xcode: [ '3.0.1' ],
+216 silly audit   xml2js: [ '0.6.0' ],
+216 silly audit   xtend: [ '4.0.2' ],
+216 silly audit   yaml: [ '2.3.4' ],
+216 silly audit   'yocto-queue': [ '0.1.0' ],
+216 silly audit   '@react-navigation/bottom-tabs': [ '6.5.11' ],
+216 silly audit   'react-native-safe-area-context': [ '4.7.4' ],
+216 silly audit   'react-native-screens': [ '3.27.0' ],
+216 silly audit   '@react-navigation/drawer': [ '6.6.6' ],
+216 silly audit   'react-native-gesture-handler': [ '2.13.4' ],
+216 silly audit   'react-native-reanimated': [ '3.5.4' ],
+216 silly audit   '@react-navigation/material-top-tabs': [ '6.6.5' ],
+216 silly audit   'react-native-pager-view': [ '6.2.2' ],
+216 silly audit   '@react-navigation/native': [ '6.1.9' ],
+216 silly audit   '@react-navigation/native-stack': [ '6.9.17' ],
+216 silly audit   'react-native-tab-view': [ '3.5.2' ],
+216 silly audit   '@react-navigation/elements': [ '1.3.21' ],
+216 silly audit   color: [ '4.2.3' ],
+216 silly audit   'warn-once': [ '0.1.1' ],
+216 silly audit   '@react-navigation/core': [ '6.4.10' ],
+216 silly audit   'fast-deep-equal': [ '3.1.3' ],
+216 silly audit   '@react-navigation/routers': [ '6.1.9' ],
+216 silly audit   'query-string': [ '7.1.3' ],
+216 silly audit   'use-latest-callback': [ '0.1.9' ],
+216 silly audit   'color-string': [ '1.9.1' ],
+216 silly audit   'simple-swizzle': [ '0.2.2' ],
+216 silly audit   'decode-uri-component': [ '0.2.2' ],
+216 silly audit   'filter-obj': [ '1.1.0' ],
+216 silly audit   'split-on-first': [ '1.1.0' ],
+216 silly audit   'strict-uri-encode': [ '2.0.0' ],
+216 silly audit   '@egjs/hammerjs': [ '2.0.17' ],
+216 silly audit   'hoist-non-react-statics': [ '3.3.2' ],
+216 silly audit   '@types/hammerjs': [ '2.0.44' ],
+216 silly audit   '@babel/plugin-transform-object-assign': [ '7.23.3' ],
+216 silly audit   'react-freeze': [ '1.0.3' ]
+216 silly audit }
+217 verbose reify failed optional dependency C:\Users\bdani\Desktop\qrmobile\qrmobile\node_modules\lightningcss-linux-x64-musl
+218 silly reify mark deleted [
+218 silly reify   'C:\\Users\\bdani\\Desktop\\qrmobile\\qrmobile\\node_modules\\lightningcss-linux-x64-musl'
+218 silly reify ]
+219 verbose reify failed optional dependency C:\Users\bdani\Desktop\qrmobile\qrmobile\node_modules\lightningcss-linux-x64-gnu
+220 silly reify mark deleted [
+220 silly reify   'C:\\Users\\bdani\\Desktop\\qrmobile\\qrmobile\\node_modules\\lightningcss-linux-x64-gnu'
+220 silly reify ]
+221 verbose reify failed optional dependency C:\Users\bdani\Desktop\qrmobile\qrmobile\node_modules\lightningcss-linux-arm64-musl
+222 silly reify mark deleted [
+222 silly reify   'C:\\Users\\bdani\\Desktop\\qrmobile\\qrmobile\\node_modules\\lightningcss-linux-arm64-musl'
+222 silly reify ]
+223 verbose reify failed optional dependency C:\Users\bdani\Desktop\qrmobile\qrmobile\node_modules\lightningcss-linux-arm64-gnu
+224 silly reify mark deleted [
+224 silly reify   'C:\\Users\\bdani\\Desktop\\qrmobile\\qrmobile\\node_modules\\lightningcss-linux-arm64-gnu'
+224 silly reify ]
+225 verbose reify failed optional dependency C:\Users\bdani\Desktop\qrmobile\qrmobile\node_modules\lightningcss-linux-arm-gnueabihf
+226 silly reify mark deleted [
+226 silly reify   'C:\\Users\\bdani\\Desktop\\qrmobile\\qrmobile\\node_modules\\lightningcss-linux-arm-gnueabihf'
+226 silly reify ]
+227 verbose reify failed optional dependency C:\Users\bdani\Desktop\qrmobile\qrmobile\node_modules\lightningcss-darwin-x64
+228 silly reify mark deleted [
+228 silly reify   'C:\\Users\\bdani\\Desktop\\qrmobile\\qrmobile\\node_modules\\lightningcss-darwin-x64'
+228 silly reify ]
+229 verbose reify failed optional dependency C:\Users\bdani\Desktop\qrmobile\qrmobile\node_modules\lightningcss-darwin-arm64
+230 silly reify mark deleted [
+230 silly reify   'C:\\Users\\bdani\\Desktop\\qrmobile\\qrmobile\\node_modules\\lightningcss-darwin-arm64'
+230 silly reify ]
+231 verbose reify failed optional dependency C:\Users\bdani\Desktop\qrmobile\qrmobile\node_modules\fsevents
+232 silly reify mark deleted [
+232 silly reify   'C:\\Users\\bdani\\Desktop\\qrmobile\\qrmobile\\node_modules\\fsevents'
+232 silly reify ]
+233 timing reifyNode:node_modules/lightningcss-linux-x64-musl Completed in 19ms
+234 timing reifyNode:node_modules/lightningcss-linux-x64-gnu Completed in 18ms
+235 timing reifyNode:node_modules/lightningcss-linux-arm64-musl Completed in 18ms
+236 timing reifyNode:node_modules/lightningcss-linux-arm64-gnu Completed in 19ms
+237 timing reifyNode:node_modules/lightningcss-linux-arm-gnueabihf Completed in 19ms
+238 timing reifyNode:node_modules/lightningcss-darwin-x64 Completed in 19ms
+239 timing reifyNode:node_modules/lightningcss-darwin-arm64 Completed in 19ms
+240 timing reifyNode:node_modules/fsevents Completed in 19ms
+241 silly tarball no local data for react-freeze@https://registry.npmjs.org/react-freeze/-/react-freeze-1.0.3.tgz. Extracting by manifest.
+242 silly tarball no local data for @babel/plugin-transform-object-assign@https://registry.npmjs.org/@babel/plugin-transform-object-assign/-/plugin-transform-object-assign-7.23.3.tgz. Extracting by manifest.
+243 silly tarball no local data for @types/hammerjs@https://registry.npmjs.org/@types/hammerjs/-/hammerjs-2.0.44.tgz. Extracting by manifest.
+244 silly tarball no local data for hoist-non-react-statics@https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz. Extracting by manifest.
+245 silly tarball no local data for @egjs/hammerjs@https://registry.npmjs.org/@egjs/hammerjs/-/hammerjs-2.0.17.tgz. Extracting by manifest.
+246 silly tarball no local data for strict-uri-encode@https://registry.npmjs.org/strict-uri-encode/-/strict-uri-encode-2.0.0.tgz. Extracting by manifest.
+247 silly tarball no local data for filter-obj@https://registry.npmjs.org/filter-obj/-/filter-obj-1.1.0.tgz. Extracting by manifest.
+248 silly tarball no local data for simple-swizzle@https://registry.npmjs.org/simple-swizzle/-/simple-swizzle-0.2.2.tgz. Extracting by manifest.
+249 silly tarball no local data for decode-uri-component@https://registry.npmjs.org/decode-uri-component/-/decode-uri-component-0.2.2.tgz. Extracting by manifest.
+250 silly tarball no local data for use-latest-callback@https://registry.npmjs.org/use-latest-callback/-/use-latest-callback-0.1.9.tgz. Extracting by manifest.
+251 silly tarball no local data for query-string@https://registry.npmjs.org/query-string/-/query-string-7.1.3.tgz. Extracting by manifest.
+252 silly tarball no local data for @react-navigation/routers@https://registry.npmjs.org/@react-navigation/routers/-/routers-6.1.9.tgz. Extracting by manifest.
+253 silly tarball no local data for fast-deep-equal@https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz. Extracting by manifest.
+254 silly tarball no local data for @react-navigation/core@https://registry.npmjs.org/@react-navigation/core/-/core-6.4.10.tgz. Extracting by manifest.
+255 silly tarball no local data for warn-once@https://registry.npmjs.org/warn-once/-/warn-once-0.1.1.tgz. Extracting by manifest.
+256 silly tarball no local data for color@https://registry.npmjs.org/color/-/color-4.2.3.tgz. Extracting by manifest.
+257 silly tarball no local data for @react-navigation/elements@https://registry.npmjs.org/@react-navigation/elements/-/elements-1.3.21.tgz. Extracting by manifest.
+258 silly tarball no local data for react-native-tab-view@https://registry.npmjs.org/react-native-tab-view/-/react-native-tab-view-3.5.2.tgz. Extracting by manifest.
+259 silly tarball no local data for @react-navigation/native-stack@https://registry.npmjs.org/@react-navigation/native-stack/-/native-stack-6.9.17.tgz. Extracting by manifest.
+260 silly tarball no local data for @react-navigation/native@https://registry.npmjs.org/@react-navigation/native/-/native-6.1.9.tgz. Extracting by manifest.
+261 silly tarball no local data for react-native-pager-view@https://registry.npmjs.org/react-native-pager-view/-/react-native-pager-view-6.2.2.tgz. Extracting by manifest.
+262 silly tarball no local data for @react-navigation/material-top-tabs@https://registry.npmjs.org/@react-navigation/material-top-tabs/-/material-top-tabs-6.6.5.tgz. Extracting by manifest.
+263 silly tarball no local data for react-native-reanimated@https://registry.npmjs.org/react-native-reanimated/-/react-native-reanimated-3.5.4.tgz. Extracting by manifest.
+264 silly tarball no local data for react-native-gesture-handler@https://registry.npmjs.org/react-native-gesture-handler/-/react-native-gesture-handler-2.13.4.tgz. Extracting by manifest.
+265 silly tarball no local data for @react-navigation/drawer@https://registry.npmjs.org/@react-navigation/drawer/-/drawer-6.6.6.tgz. Extracting by manifest.
+266 silly tarball no local data for react-native-screens@https://registry.npmjs.org/react-native-screens/-/react-native-screens-3.27.0.tgz. Extracting by manifest.
+267 silly tarball no local data for react-native-safe-area-context@https://registry.npmjs.org/react-native-safe-area-context/-/react-native-safe-area-context-4.7.4.tgz. Extracting by manifest.
+268 silly tarball no local data for @react-navigation/bottom-tabs@https://registry.npmjs.org/@react-navigation/bottom-tabs/-/bottom-tabs-6.5.11.tgz. Extracting by manifest.
+269 silly tarball no local data for react-is@https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz. Extracting by manifest.
+270 silly tarball no local data for is-arrayish@https://registry.npmjs.org/is-arrayish/-/is-arrayish-0.3.2.tgz. Extracting by manifest.
+271 silly tarball no local data for react-is@https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz. Extracting by manifest.
+272 silly tarball no local data for escape-string-regexp@https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz. Extracting by manifest.
+273 silly tarball no local data for color-name@https://registry.npmjs.org/color-name/-/color-name-1.1.4.tgz. Extracting by manifest.
+274 silly tarball no local data for color-convert@https://registry.npmjs.org/color-convert/-/color-convert-2.0.1.tgz. Extracting by manifest.
+275 silly tarball no local data for split-on-first@https://registry.npmjs.org/split-on-first/-/split-on-first-1.1.0.tgz. Extracting by manifest.
+276 silly tarball no local data for escape-string-regexp@https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz. Extracting by manifest.
+277 silly tarball no local data for color-string@https://registry.npmjs.org/color-string/-/color-string-1.9.1.tgz. Extracting by manifest.
+278 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 287ms
+279 timing auditReport:getReport Completed in 302ms
+280 silly audit report {
+280 silly audit report   semver: [
+280 silly audit report     {
+280 silly audit report       id: 1094556,
+280 silly audit report       url: 'https://github.com/advisories/GHSA-c2qf-rxjj-qqgw',
+280 silly audit report       title: 'semver vulnerable to Regular Expression Denial of Service',
+280 silly audit report       severity: 'moderate',
+280 silly audit report       vulnerable_versions: '>=7.0.0 <7.5.2',
+280 silly audit report       cwe: [Array],
+280 silly audit report       cvss: [Object]
+280 silly audit report     }
+280 silly audit report   ]
+280 silly audit report }
+281 timing metavuln:cache:get:security-advisory:semver:l1tDy7O97QFlM1xILNFUBCQmggzITPCizAi6rglwrLx6WJD8/+Nr08rZZQPgz8j4tZouIVmDaMds0B6qrOWv+w== Completed in 16ms
+282 http fetch GET 200 https://registry.npmjs.org/filter-obj/-/filter-obj-1.1.0.tgz 443ms (cache miss)
+283 timing reifyNode:node_modules/filter-obj Completed in 494ms
+284 http fetch GET 200 https://registry.npmjs.org/simple-swizzle/-/simple-swizzle-0.2.2.tgz 447ms (cache miss)
+285 timing reifyNode:node_modules/simple-swizzle Completed in 497ms
+286 http fetch GET 200 https://registry.npmjs.org/decode-uri-component/-/decode-uri-component-0.2.2.tgz 446ms (cache miss)
+287 timing reifyNode:node_modules/decode-uri-component Completed in 499ms
+288 http fetch GET 200 https://registry.npmjs.org/strict-uri-encode/-/strict-uri-encode-2.0.0.tgz 451ms (cache miss)
+289 timing reifyNode:node_modules/strict-uri-encode Completed in 500ms
+290 http fetch GET 200 https://registry.npmjs.org/@babel/plugin-transform-object-assign/-/plugin-transform-object-assign-7.23.3.tgz 456ms (cache miss)
+291 http fetch GET 200 https://registry.npmjs.org/use-latest-callback/-/use-latest-callback-0.1.9.tgz 448ms (cache miss)
+292 http fetch GET 200 https://registry.npmjs.org/@types/hammerjs/-/hammerjs-2.0.44.tgz 462ms (cache miss)
+293 timing reifyNode:node_modules/@types/hammerjs Completed in 509ms
+294 timing reifyNode:node_modules/@babel/plugin-transform-object-assign Completed in 524ms
+295 http fetch GET 200 https://registry.npmjs.org/semver 289ms (cache miss)
+296 timing metavuln:packument:semver Completed in 291ms
+297 timing metavuln:load:security-advisory:semver:1094556 Completed in 5ms
+298 http fetch GET 200 https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz 542ms (cache miss)
+299 http fetch GET 200 https://registry.npmjs.org/warn-once/-/warn-once-0.1.1.tgz 538ms (cache miss)
+300 timing reifyNode:node_modules/warn-once Completed in 594ms
+301 http fetch GET 200 https://registry.npmjs.org/color/-/color-4.2.3.tgz 541ms (cache miss)
+302 timing reifyNode:node_modules/color Completed in 597ms
+303 timing reifyNode:node_modules/hoist-non-react-statics Completed in 605ms
+304 http fetch GET 200 https://registry.npmjs.org/react-freeze/-/react-freeze-1.0.3.tgz 563ms (cache miss)
+305 timing reifyNode:node_modules/react-freeze Completed in 617ms
+306 http fetch GET 200 https://registry.npmjs.org/color-string/-/color-string-1.9.1.tgz 554ms (cache miss)
+307 timing reifyNode:node_modules/color-string Completed in 646ms
+308 http fetch GET 200 https://registry.npmjs.org/query-string/-/query-string-7.1.3.tgz 592ms (cache miss)
+309 timing reifyNode:node_modules/query-string Completed in 646ms
+310 http fetch GET 200 https://registry.npmjs.org/color-name/-/color-name-1.1.4.tgz 560ms (cache miss)
+311 http fetch GET 200 https://registry.npmjs.org/split-on-first/-/split-on-first-1.1.0.tgz 559ms (cache miss)
+312 http fetch GET 200 https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz 558ms (cache miss)
+313 timing reifyNode:node_modules/color/node_modules/color-name Completed in 647ms
+314 timing reifyNode:node_modules/split-on-first Completed in 651ms
+315 timing reifyNode:node_modules/@react-navigation/native/node_modules/escape-string-regexp Completed in 655ms
+316 http fetch GET 200 https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz 575ms (cache miss)
+317 timing reifyNode:node_modules/@react-navigation/core/node_modules/escape-string-regexp Completed in 660ms
+318 timing metavuln:cache:put:security-advisory:semver:l1tDy7O97QFlM1xILNFUBCQmggzITPCizAi6rglwrLx6WJD8/+Nr08rZZQPgz8j4tZouIVmDaMds0B6qrOWv+w== Completed in 86ms
+319 timing metavuln:calculate:security-advisory:semver:1094556 Completed in 382ms
+320 timing metavuln:cache:get:security-advisory:@expo/image-utils:m38ka5yytxmo3LfcJMP3Fdi1cVzUnqkc3eqBFi/TYLPgke59WdMy6zUCHW6kKIRJqp35HB1vWzMYRgqnNpTGEw== Completed in 5ms
+321 timing reifyNode:node_modules/use-latest-callback Completed in 681ms
+322 http fetch GET 200 https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz 634ms (cache miss)
+323 http fetch GET 200 https://registry.npmjs.org/color-convert/-/color-convert-2.0.1.tgz 607ms (cache miss)
+324 timing reifyNode:node_modules/color/node_modules/color-convert Completed in 693ms
+325 timing reifyNode:node_modules/fast-deep-equal Completed in 697ms
+326 http fetch GET 200 https://registry.npmjs.org/is-arrayish/-/is-arrayish-0.3.2.tgz 616ms (cache miss)
+327 timing reifyNode:node_modules/simple-swizzle/node_modules/is-arrayish Completed in 699ms
+328 http fetch GET 200 https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz 621ms (cache miss)
+329 timing reifyNode:node_modules/@react-navigation/core/node_modules/react-is Completed in 705ms
+330 http fetch GET 200 https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz 625ms (cache miss)
+331 timing reifyNode:node_modules/hoist-non-react-statics/node_modules/react-is Completed in 710ms
+332 http fetch GET 200 https://registry.npmjs.org/@react-navigation/routers/-/routers-6.1.9.tgz 860ms (cache miss)
+333 timing reifyNode:node_modules/@react-navigation/routers Completed in 915ms
+334 http fetch GET 200 https://registry.npmjs.org/@expo%2fimage-utils 336ms (cache miss)
+335 timing metavuln:packument:@expo/image-utils Completed in 338ms
+336 timing metavuln:load:security-advisory:@expo/image-utils:l1tDy7O97QFlM1xILNFUBCQmggzITPCizAi6rglwrLx6WJD8/+Nr08rZZQPgz8j4tZouIVmDaMds0B6qrOWv+w== Completed in 4ms
+337 http fetch GET 200 https://registry.npmjs.org/react-native-pager-view/-/react-native-pager-view-6.2.2.tgz 951ms (cache miss)
+338 timing reifyNode:node_modules/react-native-pager-view Completed in 1027ms
+339 timing metavuln:cache:put:security-advisory:@expo/image-utils:m38ka5yytxmo3LfcJMP3Fdi1cVzUnqkc3eqBFi/TYLPgke59WdMy6zUCHW6kKIRJqp35HB1vWzMYRgqnNpTGEw== Completed in 25ms
+340 timing metavuln:calculate:security-advisory:@expo/image-utils:l1tDy7O97QFlM1xILNFUBCQmggzITPCizAi6rglwrLx6WJD8/+Nr08rZZQPgz8j4tZouIVmDaMds0B6qrOWv+w== Completed in 367ms
+341 timing metavuln:cache:get:security-advisory:@expo/prebuild-config:kdo+b8ZmYyai3GyRiR1I9xJB5DnfWeyK4X6s2mjkQ4vTyfHSxKvVzXqpZk4Dx49BTJhQdkdbv6aBiwskJTDGFA== Completed in 2ms
+342 http fetch GET 200 https://registry.npmjs.org/react-native-tab-view/-/react-native-tab-view-3.5.2.tgz 1244ms (cache miss)
+343 timing reifyNode:node_modules/react-native-tab-view Completed in 1312ms
+344 http fetch GET 200 https://registry.npmjs.org/@react-navigation/material-top-tabs/-/material-top-tabs-6.6.5.tgz 1408ms (cache miss)
+345 timing reifyNode:node_modules/@react-navigation/material-top-tabs Completed in 1476ms
+346 http fetch GET 200 https://registry.npmjs.org/@egjs/hammerjs/-/hammerjs-2.0.17.tgz 1680ms (cache miss)
+347 timing reifyNode:node_modules/@egjs/hammerjs Completed in 1733ms
+348 http fetch GET 200 https://registry.npmjs.org/@react-navigation/native-stack/-/native-stack-6.9.17.tgz 1723ms (cache miss)
+349 timing reifyNode:node_modules/@react-navigation/native-stack Completed in 1786ms
+350 http fetch GET 200 https://registry.npmjs.org/react-native-safe-area-context/-/react-native-safe-area-context-4.7.4.tgz 1875ms (cache miss)
+351 timing reifyNode:node_modules/react-native-safe-area-context Completed in 1954ms
+352 http fetch GET 200 https://registry.npmjs.org/@expo%2fprebuild-config 941ms (cache miss)
+353 timing metavuln:packument:@expo/prebuild-config Completed in 943ms
+354 timing metavuln:load:security-advisory:@expo/prebuild-config:m38ka5yytxmo3LfcJMP3Fdi1cVzUnqkc3eqBFi/TYLPgke59WdMy6zUCHW6kKIRJqp35HB1vWzMYRgqnNpTGEw== Completed in 5ms
+355 http fetch GET 200 https://registry.npmjs.org/@react-navigation/bottom-tabs/-/bottom-tabs-6.5.11.tgz 1925ms (cache miss)
+356 timing reifyNode:node_modules/@react-navigation/bottom-tabs Completed in 2008ms
+357 timing metavuln:cache:put:security-advisory:@expo/prebuild-config:kdo+b8ZmYyai3GyRiR1I9xJB5DnfWeyK4X6s2mjkQ4vTyfHSxKvVzXqpZk4Dx49BTJhQdkdbv6aBiwskJTDGFA== Completed in 35ms
+358 timing metavuln:calculate:security-advisory:@expo/prebuild-config:m38ka5yytxmo3LfcJMP3Fdi1cVzUnqkc3eqBFi/TYLPgke59WdMy6zUCHW6kKIRJqp35HB1vWzMYRgqnNpTGEw== Completed in 983ms
+359 timing metavuln:cache:get:security-advisory:@expo/cli:5xKvsy8vpeXLcZyIHolgMPmrSlN6wcTyLK61ACC5aJbMEyTuRG0lpsWpIKGJuiL16519Ld087iqfxSNzcNLWZQ== Completed in 3ms
+360 http fetch GET 200 https://registry.npmjs.org/@react-navigation/drawer/-/drawer-6.6.6.tgz 2155ms (cache miss)
+361 timing reifyNode:node_modules/@react-navigation/drawer Completed in 2232ms
+362 http fetch GET 200 https://registry.npmjs.org/@expo%2fcli 246ms (cache miss)
+363 timing metavuln:packument:@expo/cli Completed in 249ms
+364 timing metavuln:load:security-advisory:@expo/cli:kdo+b8ZmYyai3GyRiR1I9xJB5DnfWeyK4X6s2mjkQ4vTyfHSxKvVzXqpZk4Dx49BTJhQdkdbv6aBiwskJTDGFA== Completed in 7ms
+365 timing metavuln:cache:put:security-advisory:@expo/cli:5xKvsy8vpeXLcZyIHolgMPmrSlN6wcTyLK61ACC5aJbMEyTuRG0lpsWpIKGJuiL16519Ld087iqfxSNzcNLWZQ== Completed in 27ms
+366 timing metavuln:calculate:security-advisory:@expo/cli:kdo+b8ZmYyai3GyRiR1I9xJB5DnfWeyK4X6s2mjkQ4vTyfHSxKvVzXqpZk4Dx49BTJhQdkdbv6aBiwskJTDGFA== Completed in 284ms
+367 timing metavuln:cache:get:security-advisory:expo:+nFjaGZUxNtllQcgtgULXHFDBQkTK+8vvhJfQ1SbGHBe2+KzOKixhLydiS8i+nmtERUiNShQdejp972GCUIsGQ== Completed in 2ms
+368 http fetch GET 200 https://registry.npmjs.org/@react-navigation/native/-/native-6.1.9.tgz 2298ms (cache miss)
+369 timing reifyNode:node_modules/@react-navigation/native Completed in 2364ms
+370 http fetch GET 200 https://registry.npmjs.org/@react-navigation/elements/-/elements-1.3.21.tgz 2346ms (cache miss)
+371 timing reifyNode:node_modules/@react-navigation/elements Completed in 2406ms
+372 http fetch GET 200 https://registry.npmjs.org/@react-navigation/core/-/core-6.4.10.tgz 2744ms (cache miss)
+373 timing reifyNode:node_modules/@react-navigation/core Completed in 2803ms
+374 http fetch GET 200 https://registry.npmjs.org/react-native-screens/-/react-native-screens-3.27.0.tgz 2762ms (cache miss)
+375 timing reifyNode:node_modules/react-native-screens Completed in 2838ms
+376 http fetch GET 200 https://registry.npmjs.org/expo 1021ms (cache miss)
+377 timing metavuln:packument:expo Completed in 1030ms
+378 timing metavuln:load:security-advisory:expo:5xKvsy8vpeXLcZyIHolgMPmrSlN6wcTyLK61ACC5aJbMEyTuRG0lpsWpIKGJuiL16519Ld087iqfxSNzcNLWZQ== Completed in 18ms
+379 timing metavuln:cache:put:security-advisory:expo:+nFjaGZUxNtllQcgtgULXHFDBQkTK+8vvhJfQ1SbGHBe2+KzOKixhLydiS8i+nmtERUiNShQdejp972GCUIsGQ== Completed in 8ms
+380 timing metavuln:calculate:security-advisory:expo:5xKvsy8vpeXLcZyIHolgMPmrSlN6wcTyLK61ACC5aJbMEyTuRG0lpsWpIKGJuiL16519Ld087iqfxSNzcNLWZQ== Completed in 1056ms
+381 timing metavuln:cache:get:security-advisory:expo-application:o7/Vo+RYNdEmKP0GtLMta0yd68vSbelpOIV4LfRxVVUNYHXwKd6BeWj9cn31pFxCK2k6od/G5QLWdcamQV6SdA== Completed in 32ms
+382 timing metavuln:cache:get:security-advisory:expo-constants:wzJVRl07G7Nf5nZk8iN7x4vHnFVLuts+xn0RzuOjox/9SRPEVDgalV5ibpO6uNPX5kKvfM4lrURUZWl1UwiGfQ== Completed in 31ms
+383 timing metavuln:cache:get:security-advisory:expo-file-system:Jp6sFk6f2vxwuF9nhj+a4n7RTKg1JFgNJK/Z55dHdAB2Nd7PB23gt1tOEMlVuT+LBNMwn3RlgHXlM3NucQIpGQ== Completed in 30ms
+384 timing metavuln:cache:get:security-advisory:expo-font:a00cD0gJejidE2nsKyME9vsugcaemV3qR3TsmloU9tdDd8+vXUuybXjc2wGlL8y0IV2rIHdCB6vs+zN9IVLLGg== Completed in 29ms
+385 timing metavuln:cache:get:security-advisory:expo-keep-awake:xvHG9VmuxInraRgKQGVPbkBh5ZiZHqu6wklJoT20Fue3BMOz24xeMtb0xKkcB+XTCrqD/UDIbUe7MFjAKHYMGQ== Completed in 28ms
+386 http fetch GET 200 https://registry.npmjs.org/expo-application 136ms (cache miss)
+387 timing metavuln:packument:expo-application Completed in 138ms
+388 timing metavuln:load:security-advisory:expo-application:+nFjaGZUxNtllQcgtgULXHFDBQkTK+8vvhJfQ1SbGHBe2+KzOKixhLydiS8i+nmtERUiNShQdejp972GCUIsGQ== Completed in 1ms
+389 http fetch GET 200 https://registry.npmjs.org/expo-keep-awake 144ms (cache miss)
+390 timing metavuln:packument:expo-keep-awake Completed in 144ms
+391 timing metavuln:load:security-advisory:expo-keep-awake:+nFjaGZUxNtllQcgtgULXHFDBQkTK+8vvhJfQ1SbGHBe2+KzOKixhLydiS8i+nmtERUiNShQdejp972GCUIsGQ== Completed in 1ms
+392 timing metavuln:cache:put:security-advisory:expo-application:o7/Vo+RYNdEmKP0GtLMta0yd68vSbelpOIV4LfRxVVUNYHXwKd6BeWj9cn31pFxCK2k6od/G5QLWdcamQV6SdA== Completed in 11ms
+393 timing metavuln:calculate:security-advisory:expo-application:+nFjaGZUxNtllQcgtgULXHFDBQkTK+8vvhJfQ1SbGHBe2+KzOKixhLydiS8i+nmtERUiNShQdejp972GCUIsGQ== Completed in 151ms
+394 http fetch GET 200 https://registry.npmjs.org/expo-font 153ms (cache miss)
+395 timing metavuln:packument:expo-font Completed in 154ms
+396 timing metavuln:load:security-advisory:expo-font:+nFjaGZUxNtllQcgtgULXHFDBQkTK+8vvhJfQ1SbGHBe2+KzOKixhLydiS8i+nmtERUiNShQdejp972GCUIsGQ== Completed in 0ms
+397 timing metavuln:cache:put:security-advisory:expo-keep-awake:xvHG9VmuxInraRgKQGVPbkBh5ZiZHqu6wklJoT20Fue3BMOz24xeMtb0xKkcB+XTCrqD/UDIbUe7MFjAKHYMGQ== Completed in 11ms
+398 timing metavuln:calculate:security-advisory:expo-keep-awake:+nFjaGZUxNtllQcgtgULXHFDBQkTK+8vvhJfQ1SbGHBe2+KzOKixhLydiS8i+nmtERUiNShQdejp972GCUIsGQ== Completed in 158ms
+399 timing metavuln:cache:put:security-advisory:expo-font:a00cD0gJejidE2nsKyME9vsugcaemV3qR3TsmloU9tdDd8+vXUuybXjc2wGlL8y0IV2rIHdCB6vs+zN9IVLLGg== Completed in 7ms
+400 timing metavuln:calculate:security-advisory:expo-font:+nFjaGZUxNtllQcgtgULXHFDBQkTK+8vvhJfQ1SbGHBe2+KzOKixhLydiS8i+nmtERUiNShQdejp972GCUIsGQ== Completed in 161ms
+401 http fetch GET 200 https://registry.npmjs.org/expo-file-system 162ms (cache miss)
+402 timing metavuln:packument:expo-file-system Completed in 163ms
+403 timing metavuln:load:security-advisory:expo-file-system:+nFjaGZUxNtllQcgtgULXHFDBQkTK+8vvhJfQ1SbGHBe2+KzOKixhLydiS8i+nmtERUiNShQdejp972GCUIsGQ== Completed in 1ms
+404 http fetch GET 200 https://registry.npmjs.org/expo-constants 168ms (cache miss)
+405 timing metavuln:packument:expo-constants Completed in 170ms
+406 timing metavuln:load:security-advisory:expo-constants:+nFjaGZUxNtllQcgtgULXHFDBQkTK+8vvhJfQ1SbGHBe2+KzOKixhLydiS8i+nmtERUiNShQdejp972GCUIsGQ== Completed in 4ms
+407 timing metavuln:cache:put:security-advisory:expo-file-system:Jp6sFk6f2vxwuF9nhj+a4n7RTKg1JFgNJK/Z55dHdAB2Nd7PB23gt1tOEMlVuT+LBNMwn3RlgHXlM3NucQIpGQ== Completed in 11ms
+408 timing metavuln:calculate:security-advisory:expo-file-system:+nFjaGZUxNtllQcgtgULXHFDBQkTK+8vvhJfQ1SbGHBe2+KzOKixhLydiS8i+nmtERUiNShQdejp972GCUIsGQ== Completed in 176ms
+409 timing metavuln:cache:put:security-advisory:expo-constants:wzJVRl07G7Nf5nZk8iN7x4vHnFVLuts+xn0RzuOjox/9SRPEVDgalV5ibpO6uNPX5kKvfM4lrURUZWl1UwiGfQ== Completed in 10ms
+410 timing metavuln:calculate:security-advisory:expo-constants:+nFjaGZUxNtllQcgtgULXHFDBQkTK+8vvhJfQ1SbGHBe2+KzOKixhLydiS8i+nmtERUiNShQdejp972GCUIsGQ== Completed in 184ms
+411 timing auditReport:init Completed in 3258ms
+412 timing reify:audit Completed in 3561ms
+413 http fetch GET 200 https://registry.npmjs.org/react-native-reanimated/-/react-native-reanimated-3.5.4.tgz 3481ms (cache miss)
+414 timing reifyNode:node_modules/react-native-reanimated Completed in 3551ms
+415 http fetch GET 200 https://registry.npmjs.org/react-native-gesture-handler/-/react-native-gesture-handler-2.13.4.tgz 3681ms (cache miss)
+416 timing reifyNode:node_modules/react-native-gesture-handler Completed in 3753ms
+417 timing reify:unpack Completed in 3758ms
+418 timing reify:unretire Completed in 0ms
+419 timing build:queue Completed in 4ms
+420 timing build:deps Completed in 4ms
+421 timing build Completed in 5ms
+422 timing reify:build Completed in 6ms
+423 timing reify:trash Completed in 4ms
+424 timing reify:save Completed in 598ms
+425 timing reify Completed in 16385ms
+426 silly ADD node_modules/react-freeze
+427 silly ADD node_modules/@babel/plugin-transform-object-assign
+428 silly ADD node_modules/@types/hammerjs
+429 silly ADD node_modules/hoist-non-react-statics
+430 silly ADD node_modules/hoist-non-react-statics/node_modules/react-is
+431 silly ADD node_modules/@egjs/hammerjs
+432 silly ADD node_modules/strict-uri-encode
+433 silly ADD node_modules/split-on-first
+434 silly ADD node_modules/filter-obj
+435 silly ADD node_modules/decode-uri-component
+436 silly ADD node_modules/simple-swizzle
+437 silly ADD node_modules/simple-swizzle/node_modules/is-arrayish
+438 silly ADD node_modules/color-string
+439 silly ADD node_modules/use-latest-callback
+440 silly ADD node_modules/query-string
+441 silly ADD node_modules/@react-navigation/routers
+442 silly ADD node_modules/fast-deep-equal
+443 silly ADD node_modules/@react-navigation/core
+444 silly ADD node_modules/@react-navigation/core/node_modules/react-is
+445 silly ADD node_modules/@react-navigation/core/node_modules/escape-string-regexp
+446 silly ADD node_modules/warn-once
+447 silly ADD node_modules/color
+448 silly ADD node_modules/color/node_modules/color-name
+449 silly ADD node_modules/color/node_modules/color-convert
+450 silly ADD node_modules/@react-navigation/elements
+451 silly ADD node_modules/react-native-tab-view
+452 silly ADD node_modules/@react-navigation/native-stack
+453 silly ADD node_modules/@react-navigation/native
+454 silly ADD node_modules/@react-navigation/native/node_modules/escape-string-regexp
+455 silly ADD node_modules/react-native-pager-view
+456 silly ADD node_modules/@react-navigation/material-top-tabs
+457 silly ADD node_modules/react-native-reanimated
+458 silly ADD node_modules/react-native-gesture-handler
+459 silly ADD node_modules/@react-navigation/drawer
+460 silly ADD node_modules/react-native-screens
+461 silly ADD node_modules/react-native-safe-area-context
+462 silly ADD node_modules/@react-navigation/bottom-tabs
+463 silly ADD
+464 silly ADD
+465 silly ADD
+466 silly ADD
+467 silly ADD
+468 silly ADD
+469 silly ADD
+470 silly ADD
+471 timing command:install Completed in 16402ms
+472 notice
+472 notice New [32mpatch[39m version of npm available! [31m10.2.3[39m -> [32m10.2.4[39m
+472 notice Changelog: [36mhttps://github.com/npm/cli/releases/tag/v10.2.4[39m
+472 notice Run [32mnpm install -g npm@10.2.4[39m to update!
+472 notice
+473 verbose exit 0
+474 timing npm Completed in 17377ms
+475 info ok

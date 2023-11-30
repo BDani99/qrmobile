@@ -1,13 +1,21 @@
-import React, { useState } from "react";
-import { View, Text, TextInput, Pressable, StyleSheet } from "react-native";
+import React, { useState } from 'react';
+import { View, Text, TextInput, Pressable, StyleSheet } from 'react-native';
+import loginUser from '../api/loginapi';
 
-const LoginScreen = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+const LoginScreen = ({ onLoginSuccess }) => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
-  const handleLogin = () => {
+  const handleLogin = async () => {
+    try {
+      // Itt hívd meg az API-t a loginUser függvény segítségével
+      await loginUser(email, password);
 
-    console.log("Bejelentkezés:", email, password);
+      // Sikeres bejelentkezés esetén hívjuk meg a callback-et
+      onLoginSuccess();
+    } catch (error) {
+      console.error('Hiba a bejelentkezés során:', error.message);
+    }
   };
 
   return (
@@ -33,6 +41,7 @@ const LoginScreen = () => {
   );
 };
 
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -51,7 +60,6 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginBottom: 20,
     paddingLeft: 10,
-    justifyContent: 'center'
   },
   loginButton: {
     backgroundColor: "#6AC054",

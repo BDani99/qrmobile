@@ -31,27 +31,8 @@ function DrawerGroup() {
     return (
         <Drawer.Navigator screenOptions={{headerShown: true}}>
             <Drawer.Screen name='Qr-kód Scennelés' component={HomeStackGroup}/>
-            <Drawer.Screen name='Egyebek' component={LoginScreen} options={{headerShown: true}}/>
+            <Drawer.Screen name='Egyebek' component={Others} options={{headerShown: true}}/>
             <Drawer.Screen name='Beállíások' component={Settings} options={{headerShown: true}}/>
-            <Drawer.Screen
-        name='Logout'
-        options={{
-          headerShown: false,
-          drawerLabel: ({ focused }) => (
-            <Text style={{ color: 'red'}}>
-              Kijelentkezés
-            </Text>
-          ),
-        }}
-      >
-        {() => (
-          <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-            <TouchableOpacity onPress={handleLogout}>
-              <Text style={{ color: 'red' }}>Kijelentkezés</Text>
-            </TouchableOpacity>
-          </View>
-        )}
-      </Drawer.Screen>
         </Drawer.Navigator>
     )
 }
@@ -73,6 +54,6 @@ const customTheme = {
     ...DefaultTheme,
     colors: {
         ...DefaultTheme.colors,
-        background: '#F3F3F3',
+        background: '#e4e6da',
     },
 };

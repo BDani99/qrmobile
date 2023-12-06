@@ -1,28 +1,27 @@
-const API_URL = "http://10.0.2.2:5000/login"; // Cseréld le a megfelelő szerver URL-re
 
 const loginUser = async (email, password) => {
   try {
-    const response = await fetch(API_URL, {
-      method: "POST",
+    const response = await fetch('http://10.0.2.2:5000/login', {
+      method: 'POST',
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
       },
-      body: JSON.stringify({
-        email,
-        password,
-      }),
+      body: JSON.stringify({ email, password }),
     });
 
-    if (!response.ok) {
-      const errorData = await response.json();
-      throw new Error(errorData.error || "Hibás válasz a szervertől");
+    const data = await response.json();
+
+    if (response.ok) {
+      if (data.admin) {
+        return { success: true, data: data };
+      } else {
+        return { success: false, error: 'Nincs megfelelő jogosultság' };
+      }
+    } else {
+      return { success: false, error: data.error };
     }
-
-    // Visszaadjuk az user objektumot helyett a true-t, ha sikeres a bejelentkezés
-    return true;
-
   } catch (error) {
-    throw new Error("Hiba a bejelentkezés során: " + error.message);
+    return { success: false, error: 'Hiba a szerverrel való kommunikáció során' };
   }
 };
 

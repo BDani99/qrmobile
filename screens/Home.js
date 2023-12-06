@@ -1,13 +1,27 @@
 import React, { useState, useEffect } from "react";
-import { SafeAreaView, StyleSheet, Text, View, Pressable, PermissionsAndroid, Alert } from "react-native";
+import {
+  SafeAreaView,
+  StyleSheet,
+  Text,
+  View,
+  Pressable,
+  PermissionsAndroid,
+  Alert,
+  Modal,
+  TextInput,
+  TouchableOpacity,
+} from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { BarCodeScanner } from 'expo-barcode-scanner';
+import validateQRCode from '../api/qr';
 
 const Home = () => {
   const navigation = useNavigation();
   const [isCameraOpen, setIsCameraOpen] = useState(false);
   const [hasPermission, setHasPermission] = useState(null);
   const [scannedData, setScannedData] = useState(null);
+  const [manualInputVisible, setManualInputVisible] = useState(false);
+  const [manualInput, setManualInput] = useState("");
 
   useEffect(() => {
     const checkCameraPermission = async () => {
@@ -47,24 +61,41 @@ const Home = () => {
     setScannedData(null);
   };
 
-  const handleBarCodeScanned = ({ data }) => {
+  const handleBarCodeScanned = async ({ data }) => {
     setScannedData(data);
     setIsCameraOpen(false); 
     Alert.alert("Beolvasva", "QR-kód sikeresen beolvasva");
-    console.log("Qr-kód: " + data)
+    console.log("Qr-kód: " + data);
+  
+    await validateQRCode(data);
   };
 
-  if (hasPermission === null) {
-    return <View />;
-  }
-  if (hasPermission === false) {
-    return <Text>No access to camera</Text>;
-  }
+  const handleManualInput = async () => {
+    setIsCameraOpen(false);
+    setManualInputVisible(true);
+  };
+
+  const handleConfirmManualInput = async () => {
+    await validateQRCode(manualInput);
+    setManualInputVisible(false);
+  };
+
+  const handleCancelManualInput = () => {
+    setManualInputVisible(false);
+  };
 
   return (
     <SafeAreaView style={styles.container}>
       <Text>Üdvözöljük!</Text>
-      <Text>Olvassa be a QR-kódot!</Text>
+      <Text>Olvassa be a QR-kódot vagy használja a kézi bevitelt!</Text>
+      <Pressable
+        style={styles.button}
+        onPress={handleManualInput}
+      >
+        <Text style={styles.buttonText}>
+          Kézi bevitel
+        </Text>
+      </Pressable>
       <Pressable
         style={styles.button}
         onPress={isCameraOpen ? handleGoBack : handleToggleCamera}
@@ -86,6 +117,36 @@ const Home = () => {
           )}
         </View>
       )}
+      <Modal
+  visible={manualInputVisible}
+  transparent={true}
+  animationType="slide"
+>
+  <View style={styles.modalContainer}>
+    <View style={styles.modalContent}>
+      <TextInput
+        style={styles.input}
+        placeholder="Írja be a QR kódot"
+        onChangeText={(text) => setManualInput(text)}
+        value={manualInput}
+      />
+      <View style={styles.buttonContainer}>
+      <TouchableOpacity
+          style={[styles.confirmButton, { backgroundColor: '#e02626' }]}
+          onPress={handleCancelManualInput}
+        >
+          <Text style={styles.buttonText}>Mégse</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={[styles.confirmButton, { backgroundColor: '#137d28' }]}
+          onPress={handleConfirmManualInput}
+        >
+          <Text style={styles.buttonText}>Megerősít</Text>
+        </TouchableOpacity>
+      </View>
+    </View>
+  </View>
+</Modal>
     </SafeAreaView>
   );
 };
@@ -93,20 +154,27 @@ const Home = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
+    alignItems: "start",
     marginTop: 10,
+    paddingHorizontal: 30,
+ 
   },
   button: {
-    marginTop: 40,
-    borderRadius: 10,
-    backgroundColor: "#6AC054",
+    alignItems: "center",
+    marginTop: 20,
+    borderRadius: 20,
+    backgroundColor: "#367a5f",
     padding: 12,
   },
   buttonText: {
     color: "white",
     fontWeight: "bold",
+    
   },
   cameraContainer: {
+    flex: 1,
+    marginTop: 80,
+    height: '94%',
     ...StyleSheet.absoluteFillObject,
   },
   scannedDataContainer: {
@@ -121,6 +189,40 @@ const styles = StyleSheet.create({
   scanner: {
     height: '75%',
     marginTop: 150,
+  },
+  modalContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+  },
+  modalContent: {
+    width: '80%',
+    padding: 15,
+    backgroundColor: 'white',
+    borderRadius: 10,
+    alignItems: 'center',
+  },
+  input: {
+    height: 40,
+    width: '80%',
+    borderColor: 'gray',
+    borderWidth: 1,
+    borderRadius: 10,
+    marginBottom: 20,
+    padding: 10,
+  },
+  confirmButton: {
+    width: '36%',
+    padding: 10,
+    borderRadius: 10,
+    margin: 10,
+    alignItems: 'center',
+  },
+  buttonContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: 10,
   },
 });
 

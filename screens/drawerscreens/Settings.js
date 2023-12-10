@@ -3,9 +3,16 @@ import { View, Text, TextInput, StyleSheet, TouchableOpacity } from 'react-nativ
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { getCurrentUser } from '../../api/me';
 import { logoutUser } from '../../api/logout';
+import { updateProfile } from '../../api/settings';
 
 const UserProfile = () => {
-  const [userData, setUserData] = useState(null);
+  const [userData, setUserData] = useState({
+    email: "",
+    name: "",
+    dateOfBirth: "",
+    address: "",
+    placeOfBirth: "",
+  });
 
   useEffect(() => {
     const fetchData = async () => {
@@ -14,8 +21,8 @@ const UserProfile = () => {
         const userId = await AsyncStorage.getItem('userId');
 
         if (accessToken && userId) {
-          const userData = await getCurrentUser(accessToken, userId);
-          setUserData(userData);
+          const user = await getCurrentUser(accessToken, userId);
+          setUserData(user);
         } else {
           console.error('Nincs elérhető accessToken vagy userId.');
         }
@@ -47,6 +54,31 @@ const UserProfile = () => {
     }
   };
 
+  const handleSave = async () => {
+    try {
+      const accessToken = await AsyncStorage.getItem('accessToken');
+      const userId = await AsyncStorage.getItem('userId');
+
+      if (accessToken && userId) {
+        const result = await updateProfile(accessToken, userId, userData);
+
+        if (result.success) {
+          console.log("Profil frissítve:", result.data);
+        } else {
+          console.error("Profil frissítése sikertelen:", result.error);
+        }
+      } else {
+        console.error('Nincs elérhető accessToken vagy userId a profil frissítéséhez.');
+      }
+    } catch (error) {
+      console.error('Hiba a profil frissítése során:', error.message);
+    }
+  };
+
+  const handleInputChange = (field, value) => {
+    setUserData((prevUserData) => ({ ...prevUserData, [field]: value }));
+  };
+
   if (!userData) {
     return null;
   }
@@ -55,25 +87,45 @@ const UserProfile = () => {
     <View style={styles.container}>
       <View style={styles.inputContainer}>
         <Text style={styles.label}>Email:</Text>
-        <TextInput style={styles.input} value={userData.email} />
+        <TextInput
+          style={styles.input}
+          defaultValue={userData.email}
+          onChangeText={(text) => handleInputChange('email', text)}
+        />
       </View>
       <View style={styles.inputContainer}>
         <Text style={styles.label}>Név:</Text>
-        <TextInput style={styles.input} value={userData.name} />
+        <TextInput
+          style={styles.input}
+          defaultValue={userData.name}
+          onChangeText={(text) => handleInputChange('name', text)}
+        />
       </View>
       <View style={styles.inputContainer}>
         <Text style={styles.label}>Születési dátum:</Text>
-        <TextInput style={styles.input} value={userData.dateOfBirth} />
+        <TextInput
+          style={styles.input}
+          defaultValue={userData.dateOfBirth}
+          onChangeText={(text) => handleInputChange('dateOfBirth', text)}
+        />
       </View>
       <View style={styles.inputContainer}>
         <Text style={styles.label}>Cím:</Text>
-        <TextInput style={styles.input} value={userData.address} />
+        <TextInput
+          style={styles.input}
+          defaultValue={userData.address}
+          onChangeText={(text) => handleInputChange('address', text)}
+        />
       </View>
       <View style={styles.inputContainer}>
         <Text style={styles.label}>Születési hely:</Text>
-        <TextInput style={styles.input} value={userData.placeOfBirth} />
+        <TextInput
+          style={styles.input}
+          defaultValue={userData.placeOfBirth}
+          onChangeText={(text) => handleInputChange('placeOfBirth', text)}
+        />
       </View>
-      <TouchableOpacity style={styles.saveButton}>
+      <TouchableOpacity style={styles.saveButton} onPress={handleSave}>
         <Text style={styles.saveButtonText}>Mentés</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.logoutButton} onPress={handleLogout}>

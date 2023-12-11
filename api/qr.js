@@ -1,4 +1,5 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { Alert } from 'react-native';
 
 const validateQRCode = async (qrcode) => {
   try {
@@ -27,6 +28,7 @@ const validateQRCode = async (qrcode) => {
 
     if (responseData.message) {
       console.log(responseData.message);
+      Alert.alert(responseData.message);
     } else {
       console.error('Hiba: Nem sikerült érvényesíteni a jegyet.');
     }

@@ -6,10 +6,10 @@ import {
   View,
   Pressable,
   PermissionsAndroid,
-  Alert,
   Modal,
   TextInput,
   TouchableOpacity,
+  Alert
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { BarCodeScanner } from 'expo-barcode-scanner';
@@ -62,12 +62,14 @@ const Home = () => {
   };
 
   const handleBarCodeScanned = async ({ data }) => {
-    setScannedData(data);
-    setIsCameraOpen(false); 
-    Alert.alert("Beolvasva", "QR-kód sikeresen beolvasva");
-    console.log("Qr-kód: " + data);
-  
-    await validateQRCode(data);
+    try {
+      await validateQRCode(data);
+      setScannedData(data);
+      setIsCameraOpen(false); 
+      console.log("Qr-kód: " + data);
+    } catch (error) {
+      console.error("Hiba történt a QR-kód validálása közben:", error);
+    }
   };
 
   const handleManualInput = async () => {
@@ -76,9 +78,14 @@ const Home = () => {
   };
 
   const handleConfirmManualInput = async () => {
-    await validateQRCode(manualInput);
-    setManualInputVisible(false);
+    try {
+      await validateQRCode(manualInput);
+      setManualInputVisible(false);
+    } catch (error) {
+      console.error("Hiba történt a QR-kód validálása közben:", error);
+    }
   };
+  
 
   const handleCancelManualInput = () => {
     setManualInputVisible(false);
@@ -118,35 +125,35 @@ const Home = () => {
         </View>
       )}
       <Modal
-  visible={manualInputVisible}
-  transparent={true}
-  animationType="slide"
->
-  <View style={styles.modalContainer}>
-    <View style={styles.modalContent}>
-      <TextInput
-        style={styles.input}
-        placeholder="Írja be a QR kódot"
-        onChangeText={(text) => setManualInput(text)}
-        value={manualInput}
-      />
-      <View style={styles.buttonContainer}>
-      <TouchableOpacity
-          style={[styles.confirmButton, { backgroundColor: '#e02626' }]}
-          onPress={handleCancelManualInput}
-        >
-          <Text style={styles.buttonText}>Mégse</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={[styles.confirmButton, { backgroundColor: '#137d28' }]}
-          onPress={handleConfirmManualInput}
-        >
-          <Text style={styles.buttonText}>Megerősít</Text>
-        </TouchableOpacity>
-      </View>
-    </View>
-  </View>
-</Modal>
+        visible={manualInputVisible}
+        transparent={true}
+        animationType="slide"
+      >
+        <View style={styles.modalContainer}>
+          <View style={styles.modalContent}>
+            <TextInput
+              style={styles.input}
+              placeholder="Írja be a QR kódot"
+              onChangeText={(text) => setManualInput(text)}
+              value={manualInput}
+            />
+            <View style={styles.buttonContainer}>
+              <TouchableOpacity
+                style={[styles.confirmButton, { backgroundColor: '#e02626' }]}
+                onPress={handleCancelManualInput}
+              >
+                <Text style={styles.buttonText}>Mégse</Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={[styles.confirmButton, { backgroundColor: '#137d28' }]}
+                onPress={handleConfirmManualInput}
+              >
+                <Text style={styles.buttonText}>Megerősít</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+        </View>
+      </Modal>
     </SafeAreaView>
   );
 };
@@ -157,7 +164,6 @@ const styles = StyleSheet.create({
     alignItems: "start",
     marginTop: 10,
     paddingHorizontal: 30,
- 
   },
   button: {
     alignItems: "center",
@@ -169,7 +175,6 @@ const styles = StyleSheet.create({
   buttonText: {
     color: "white",
     fontWeight: "bold",
-    
   },
   cameraContainer: {
     flex: 1,
